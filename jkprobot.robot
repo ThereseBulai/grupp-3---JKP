@@ -14,10 +14,31 @@ ${Browser}    Chrome
 Open Browser To Home Page
     [Tags]    Alma
     Open Browser To Home Page
-    [Teardown]    Close Browser
 
+
+Valid Login Succesful
+    [Tags]    Alma
+    Open browser To Home Page
+    Click Login Link
+    Type In Username    test
+    Type In Password    test
+    Submit Credentials
+    [Teardown]    Close Browser
 
 
 *** Keywords ***
 Open Browser To Home Page
     Open Browser    ${Home-Url}    ${Browser}
+
+Click Login Link
+    Click Element    xpath =//*[@id='login-nav']/a
+
+Type In Username    
+    [Arguments]    ${username}
+    Input Text    xpath = //*[@id='login-username']    ${username}
+Type In Password
+    [Arguments]    ${password}
+    Input Text    xpath = //*[@id='login-password']    ${password}
+
+Submit Credentials
+    Click Button    xpath = //*[@id='login-form']/button
