@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-10T14:30:41.663229" rpa="false" schemaversion="5">
+<suite id="s1" name="Jkprobot" source="c:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP\jkprobot.robot">
+<test id="s1-t1" name="Open Browser To Home Page" line="14">
+<kw name="Open Browser To Home Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-10T14:30:43.434999" level="INFO">Opening browser 'Chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/jurastina-alfa/jurap.html'.</msg>
+<arg>${Home-Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-10T14:30:43.434454" elapsed="23.456163"/>
+</kw>
+<status status="PASS" start="2025-02-10T14:30:43.429164" elapsed="24.042198"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-10T14:31:07.952994" elapsed="21.760124"/>
+</kw>
+<tag>Alma</tag>
+<status status="PASS" start="2025-02-10T14:30:43.427680" elapsed="46.308162"/>
+</test>
+<status status="PASS" start="2025-02-10T14:30:41.674416" elapsed="48.117252"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Alma</stat>
+</tag>
+<suite>
+<stat name="Jkprobot" id="s1" pass="1" fail="0" skip="0">Jkprobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
