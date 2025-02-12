@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-10T15:15:01.818222" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-12T15:04:40.700153" rpa="false" schemaversion="5">
 <suite id="s1" name="grupp-3---JKP" source="C:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP">
 <suite id="s1-s1" name="Jkprobot" source="C:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP\jkprobot.robot">
-<test id="s1-s1-t1" name="Valid Login Succesful" line="19">
-<kw name="Open Browser To Home Page">
+<test id="s1-s1-t1" name="Valid Login Succesful" line="17">
+<kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-10T15:15:02.070098" level="INFO">Opening browser 'Chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/jurastina-alfa/jurap.html'.</msg>
-<arg>${Home-Url}</arg>
-<arg>${Browser}</arg>
+<msg time="2025-02-12T15:04:40.962444" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-10T15:15:02.069671" elapsed="1.564784"/>
+<status status="PASS" start="2025-02-12T15:04:40.962044" elapsed="1.548885"/>
 </kw>
-<status status="PASS" start="2025-02-10T15:15:02.068616" elapsed="1.566128"/>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-02-12T15:04:40.960867" elapsed="1.550577"/>
 </kw>
-<kw name="Click Login Link">
+<kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-10T15:15:03.636350" level="INFO">Clicking element 'xpath =//*[@id='login-nav']/a'.</msg>
-<arg>xpath =//*[@id='login-nav']/a</arg>
+<msg time="2025-02-12T15:04:42.513365" level="INFO">Clicking element 'xpath = //*[@id='login-nav']/a'.</msg>
+<arg>xpath = //*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-10T15:15:03.635720" elapsed="0.076859"/>
+<status status="PASS" start="2025-02-12T15:04:42.512795" elapsed="0.071816"/>
 </kw>
-<status status="PASS" start="2025-02-10T15:15:03.635140" elapsed="0.077698"/>
+<status status="PASS" start="2025-02-12T15:04:42.511975" elapsed="0.072889"/>
 </kw>
-<kw name="Type In Username">
+<kw name="Type In Username" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-10T15:15:03.713879" level="INFO">Typing text 'test' into text field 'xpath = //*[@id='login-username']'.</msg>
-<arg>xpath = //*[@id='login-username']</arg>
+<msg time="2025-02-12T15:04:42.586042" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-username']'.</msg>
+<arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-10T15:15:03.713529" elapsed="0.100585"/>
+<status status="PASS" start="2025-02-12T15:04:42.585721" elapsed="0.086153"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-10T15:15:03.713088" elapsed="0.101211"/>
+<status status="PASS" start="2025-02-12T15:04:42.585225" elapsed="0.086959"/>
 </kw>
-<kw name="Type In Password">
+<kw name="Type In Password" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-10T15:15:03.815360" level="INFO">Typing text 'test' into text field 'xpath = //*[@id='login-password']'.</msg>
-<arg>xpath = //*[@id='login-password']</arg>
+<msg time="2025-02-12T15:04:42.673501" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-password']'.</msg>
+<arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-10T15:15:03.815047" elapsed="0.053244"/>
+<status status="PASS" start="2025-02-12T15:04:42.673178" elapsed="0.051684"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-10T15:15:03.814587" elapsed="0.053855"/>
+<status status="PASS" start="2025-02-12T15:04:42.672582" elapsed="0.052438"/>
 </kw>
-<kw name="Submit Credentials">
+<kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-10T15:15:03.869433" level="INFO">Clicking button 'xpath = //*[@id='login-form']/button'.</msg>
-<arg>xpath = //*[@id='login-form']/button</arg>
+<msg time="2025-02-12T15:04:42.726090" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-10T15:15:03.869162" elapsed="0.055890"/>
+<status status="PASS" start="2025-02-12T15:04:42.725817" elapsed="0.055835"/>
 </kw>
-<status status="PASS" start="2025-02-10T15:15:03.868733" elapsed="0.056833"/>
+<status status="PASS" start="2025-02-12T15:04:42.725361" elapsed="0.056444"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-10T15:15:03.926649" elapsed="2.336426"/>
+<status status="PASS" start="2025-02-12T15:04:42.782162" elapsed="2.302759"/>
 </kw>
 <tag>Alma</tag>
-<status status="PASS" start="2025-02-10T15:15:02.067232" elapsed="4.196682"/>
+<status status="PASS" start="2025-02-12T15:04:40.959553" elapsed="4.125644"/>
 </test>
-<status status="PASS" start="2025-02-10T15:15:01.842524" elapsed="4.424250"/>
+<status status="PASS" start="2025-02-12T15:04:40.725005" elapsed="4.361523"/>
 </suite>
-<status status="PASS" start="2025-02-10T15:15:01.822034" elapsed="4.447775"/>
+<status status="PASS" start="2025-02-12T15:04:40.705426" elapsed="4.382367"/>
 </suite>
 <statistics>
 <total>
