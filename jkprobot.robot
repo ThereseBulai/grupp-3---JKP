@@ -31,14 +31,11 @@ Register New Account Valid Login Succesful
 No Registration Invalid Login Unsuccessful 
    [Tags]   Kotaiba    
    Click Login Link 
-   
    Type In Username Login   wrong_user
    Type In Password Login   wrong_pass
    Submit Credentials
-   Verify Login Failed
-   [Teardown]   Close Browser
-
-
+   Verify Login Failed       
+   [Teardown]   Close Browser 
 
 Register Sucessful Invalid Username
     [Tags]    Therese/Kotaiba
@@ -46,7 +43,6 @@ Register Sucessful Invalid Username
     Type In Username Register   test
     Type In Password Register    test123456789   
     Sumbit Register Button
-    # Username Ska ha samma användarenamn står det 
     Click Login Link
     Type In Username Login    test123
     Type In Password Login    test123456789
@@ -61,7 +57,6 @@ Register Sucessful Invalid Password
     Type In Username Register   test123
     Type In Password Register    test123456789   
     Sumbit Register Button
-    # Username Ska ha samma användarenamn står det 
     Click Login Link
     Type In Username Login    test123
     Type In Password Login    test

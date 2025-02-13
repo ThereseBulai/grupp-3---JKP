@@ -23,8 +23,8 @@ Submit Credentials
 
 #Verify keywords
 Verify Login Failed
-   Wait Until Page Contains    //*[@id="error-message"]
-   Element Should Be Visible  xpath=//*[@id="error-message"]
+   Wait Until Element Is Visible    xpath=//*[@id="login-message"]    10s
+   Element Should Be Visible  xpath=//*[@id="login-message"]
 
 #Register keywords
  Type In Username Register
