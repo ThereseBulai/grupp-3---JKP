@@ -31,7 +31,7 @@ Verify Login Failed
     [Arguments]    ${username}
     Input Text    //*[@id="reg-username"]    ${username}
 
-     
+ 
 Type In Password Register
      [Arguments]    ${password}    
     Input Text    //*[@id="reg-password"]    ${password} 
@@ -42,5 +42,55 @@ Click Register Link
 Sumbit Register Button
     Click Element    //*[@id="register-form"]/button
 
+#testfall för att lägga till 2 biljetter för vuxna och 2 för barn  
+Click Buy Tickets Link
+    Click Element    //*[@id="tickets-nav"]/a
+
+Click Ticket Category
+    Click Element    //*[@id="ticket-category"]
+    
+Choose VIP Ticket
+      Click Element    //*[@id="ticket-category"]/option[2]
+
+Click Quantity Link
+    [Arguments]    ${numberOfTickets}  
+    Input Text    //*[@id="ticket-quantity"]    ${numberOfTickets}
+
+Click Add To Cart
+    Click Element    //*[@id="ticket-form"]/button
+
+Click Ticket Type
+    Click Element    //*[@id="ticket-type"]
+    
+Choose Child
+    Click Element    //*[@id="ticket-type"]/option[2]
+
+Click Cart Link
+    Click Element    //*[@id="cart-nav"]/a
+
+Click Proceed To Checkout    
+    Click Element    //*[@id="checkout-button"]
+  
+
+
+
 
     
+
+
+#Book Safari Keywords
+Click Book Safaris Link
+    Click Element    //*[@id="safari-nav"]/a
+    
+Click Select Safari Date
+    [Arguments]    ${chooseDate}
+    Click Element    //*[@id="safari-date"]    ${chooseDate} 
+
+
+#kanske ändra denna? kankse inte såhär man skriver det
+Select Safari Type 
+    Click Element    //*[@id="safari-type"]/option[2]
+    
+Click Add To Cart Safari
+    Click Element    //*[@id="safari-form"]/button
+
