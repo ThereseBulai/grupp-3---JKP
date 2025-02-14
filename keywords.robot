@@ -84,7 +84,8 @@ Click Book Safaris Link
     
 Click Select Safari Date
     [Arguments]    ${chooseDate}
-    Click Element    //*[@id="safari-date"]    ${chooseDate} 
+    Input Text   //*[@id="safari-date"]    ${chooseDate} 
+
 
 
 #kanske ändra denna? kankse inte såhär man skriver det
