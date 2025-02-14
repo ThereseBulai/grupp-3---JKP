@@ -78,9 +78,16 @@ Book Safari Tour
     Handle Alert
 
 
+    Click Book Safaris Link    
+    Click Select Safari Date    2025-02-22
+    Select Safari Type T-rex Rubmle
+    Sleep    5
+    Click Add To Cart Safari
+    Handle Alert
+
     Click Book Safaris Link
     Click Select Safari Date    2025-02-22
-    Select Safari Type
+    Select Safari Type Herbivore   
     Sleep    5
     Click Add To Cart Safari
     Handle Alert

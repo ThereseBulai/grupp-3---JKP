@@ -12,3 +12,26 @@ Documentation     bla
 
 *** Test Cases ***
 
+Buying Entrace Ticket For One Adult
+    [Tags]    Therese
+    [Documentation]    As a cusomer, Snåla-Kalle wants to buy the cheapest ticket.
+    Click Register Link
+    Type In Username Register     Ståla-Nalle
+    Type In Password Register    snålareänsnålast    
+    Sumbit Register Button
+
+    Click Login Link
+    Type In Username Login   Ståla-Nalle
+    Type In Password Login   snålareänsnålast    
+    Submit Credentials
+    Sleep    2
+
+    Click Buy Tickets Link
+    Click Ticket Category
+    Choose Regular Ticket
+    Click Quantity Link    1
+    Click Add To Cart
+    Handle Alert
+    
+    Click Cart Link
+    Click Proceed To Checkout

@@ -42,6 +42,8 @@ Click Register Link
 Sumbit Register Button
     Click Element    //*[@id="register-form"]/button
 
+
+
 #testfall för att lägga till 2 biljetter för vuxna och 2 för barn  
 Click Buy Tickets Link
     Click Element    //*[@id="tickets-nav"]/a
@@ -72,7 +74,8 @@ Click Proceed To Checkout
     Click Element    //*[@id="checkout-button"]
   
 
-
+Choose Regular Ticket
+    Click Element   //*[@id="ticket-category"]/option[1] 
 
 
     
@@ -81,7 +84,7 @@ Click Proceed To Checkout
 #Book Safari Keywords
 Click Book Safaris Link
     Click Element    //*[@id="safari-nav"]/a
-    
+
 Click Select Safari Date
     [Arguments]    ${chooseDate}
     Input Text   //*[@id="safari-date"]    ${chooseDate} 
@@ -89,8 +92,12 @@ Click Select Safari Date
 
 
 #kanske ändra denna? kankse inte såhär man skriver det
-Select Safari Type 
+Select Safari Type T-rex Rubmle 
     Click Element    //*[@id="safari-type"]/option[2]
+
+Select Safari Type Herbivore 
+    Click Element    //*[@id="safari-type"]/option[1] 
+
     
 Click Add To Cart Safari
     Click Element    //*[@id="safari-form"]/button
