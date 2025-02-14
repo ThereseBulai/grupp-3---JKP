@@ -78,12 +78,9 @@ Choose Regular Ticket
     Click Element   //*[@id="ticket-category"]/option[1] 
 
 
-    
-
-
 #Book Safari Keywords
 Click Book Safaris Link
-    Click Element    //*[@id="safari-nav"]/a
+    Click Element    //*[@id="safari-nav"]
 
 Click Select Safari Date
     [Arguments]    ${chooseDate}
@@ -101,4 +98,9 @@ Select Safari Type Herbivore
     
 Click Add To Cart Safari
     Click Element    //*[@id="safari-form"]/button
+
+
+Book Safari failed 
+   Wait Until Element Contains    xpath=//*[@id="safari-message"]  10s
+  
 

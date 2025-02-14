@@ -85,17 +85,34 @@ Book Safari Tour
     Click Add To Cart Safari
     Handle Alert
 
-    Click Book Safaris Link
-    Click Select Safari Date    2025-02-22
-    Select Safari Type Herbivore   
-    Sleep    5
-    Click Add To Cart Safari
-    Handle Alert
+    
 
     Click Cart Link
     Click Proceed To Checkout
 
 
+Book Safari Tour With Date That Has Passed
+   [Tags]   Kotaiba
+   [Documentation]   Controll that you can not book safari for a date that has already passed
+
+   Click Register Link 
+   Type In Username Register    test3
+   Type In Password Register    test123456789
+   Sumbit Register Button
+
+   Click Login Link
+   Type In Username Login   test3
+   Type In Password Login   test123456789
+   Submit Credentials
+   Sleep   5
+
+   Click Book Safaris Link 
+   Click Select Safari Date   2025-01-01  #Datum har redan passerat 
+   Select Safari Type T-rex Rubmle
+   Sleep   5
+   Click Add To Cart Safari
+   
+  
 
 
 

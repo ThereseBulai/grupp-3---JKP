@@ -55,7 +55,7 @@ Register New Account Log In With Invalid Username
     Verify Login Failed
 
 
-Register New Account Log In With Invalid Password
+ New Account Log In With Invalid Password
     [Tags]    Therese/Kotaiba
     [Documentation]     The test covers if a user register a new account and then try to log in with a invalid password.    
     Click Register Link
@@ -65,7 +65,7 @@ Register New Account Log In With Invalid Password
     Click Login Link
     Type In Username Login    test123
     Type In Password Login    test
-    Submit Credentials
+    Submit Credentials     
     Verify Login Failed
 
 
