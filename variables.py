@@ -1,3 +1,4 @@
+#Alma, Therese & Kotaiba, Grupp 3
 import os
 
 #Directory

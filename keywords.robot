@@ -1,3 +1,4 @@
+#Alma, Therese & Kotaiba, Grupp 3
 *** Settings ***
 Library    SeleniumLibrary
 
@@ -44,7 +45,7 @@ Sumbit Register Button
 
 
 
-#testfall för att lägga till 2 biljetter för vuxna och 2 för barn  
+#Keywords for bying tickets
 Click Buy Tickets Link
     Click Element    //*[@id="tickets-nav"]/a
 
@@ -67,16 +68,16 @@ Click Ticket Type
 Choose Child
     Click Element    //*[@id="ticket-type"]/option[2]
 
+Choose Regular Ticket
+    Click Element   //*[@id="ticket-category"]/option[1] 
+
+#Keywords for checkout
 Click Cart Link
     Click Element    //*[@id="cart-nav"]/a
 
 Click Proceed To Checkout    
     Click Element    //*[@id="checkout-button"]
   
-
-Choose Regular Ticket
-    Click Element   //*[@id="ticket-category"]/option[1] 
-
 
 #Book Safari Keywords
 Click Book Safaris Link
@@ -88,7 +89,7 @@ Click Select Safari Date
 
 
 
-#kanske ändra denna? kankse inte såhär man skriver det
+#Keywords for different safari types
 Select Safari Type T-rex Rubmle 
     Click Element    //*[@id="safari-type"]/option[2]
 
@@ -102,5 +103,11 @@ Click Add To Cart Safari
 
 Book Safari failed 
    Wait Until Element Contains    xpath=//*[@id="safari-message"]  10s
+
+
+
+#Keywords for removing objects in cart
+Click Remove Ticket
+    Click Element    //*[@id="cart-details"]/ul/li[1]/button
   
 
