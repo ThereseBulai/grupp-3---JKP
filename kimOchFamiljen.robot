@@ -52,7 +52,7 @@ Book Safari Tour On The Weekend
     [Tags]    Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
     [Documentation]    Given that Kim has registered an account and booked VIP-entrance tickets, 
     ...                When he choose safari-dates, 
-    ...                Then he should be able to book safari on the weekends.
+    ...                Then he should be able to book safari on the weekends specifically tours that get close to the dinasours.
     Click Register Link
     Type In Username Register     test2
     Type In Password Register    test123456789    
@@ -82,8 +82,12 @@ Book Safari Tour On The Weekend
 
     Click Book Safaris Link    
     Click Select Safari Date    002025-02-22
-    Select Safari Type T-rex Rubmle
+    Select Safari Type Extreme Thrill Pack
     Sleep    5
+    Click Add To Cart Safari
+    Handle Alert
+    Click Select Safari Date    002025-02-22
+    Select Safari Type Herbivore With Feeding
     Click Add To Cart Safari
     Handle Alert
     Click Cart Link

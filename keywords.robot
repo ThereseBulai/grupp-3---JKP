@@ -96,6 +96,11 @@ Select Safari Type T-rex Rubmle
 Select Safari Type Herbivore 
     Click Element    //*[@id="safari-type"]/option[1] 
 
+Select Safari Type Extreme Thrill Pack
+    Click Element   //*[@id="safari-type"]/option[4]  
+
+Select Safari Type Herbivore With Feeding
+    Click Element    //*[@id="safari-type"]/option[3] 
     
 Click Add To Cart Safari
     Click Element    //*[@id="safari-form"]/button
