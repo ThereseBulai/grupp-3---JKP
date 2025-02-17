@@ -14,7 +14,7 @@ Documentation     bla
 
 Buying Entrace Ticket For One Adult
     [Tags]    Therese
-    [Documentation]    As a cusomer, Snåla-Kalle wants to buy the cheapest ticket.
+    [Documentation]    As a customer, Snåla-Kalle wants to buy the cheapest ticket.
     Click Register Link
     Type In Username Register     Ståla-Nalle
     Type In Password Register    snålareänsnålast    

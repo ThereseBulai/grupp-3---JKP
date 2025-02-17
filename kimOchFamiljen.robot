@@ -8,7 +8,7 @@ Resource    keywords.robot
 Variables    variables.py
 Test Setup        Open Browser To Home Page    ${url}    ${browser}     
 Test Teardown    Close Browser
-Documentation     Test desinged for the persona Kim and his family. 
+Documentation     Test designed for the persona Kim and his family. 
 
 *** Test Cases ***
 
@@ -46,9 +46,7 @@ Buying Entrance Ticket For Two Adults And Two Children
     Click Proceed To Checkout
     
 
-
-
-Book Safari Tour
+Book Safari Tour On The Weekend
     [Tags]    Therese & Alma
     [Documentation]    As a customer, Kim wants to be able to book a safari tour for his family. 
     Click Register Link
