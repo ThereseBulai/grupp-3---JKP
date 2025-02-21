@@ -5,7 +5,7 @@ import os
 current_directory = os.getcwd().replace('\\', '/')
 
 browser = "chrome"
-url = f"file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html"
+url = f"file:///C:/Users/there/Desktop/webpage-jurap/jurap.html"
 alert_text = "Item added to cart!"
 
 
