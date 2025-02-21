@@ -1,0 +1,27 @@
+ Acceptanskriterier:
+ 
+Register Account With Atleast 8 Characters In Password
+Given that the user is on the website
+And has pressed the registered link
+When the user is entering a password shorter than 8 charachters
+Then they should get an error message saying that the password must be atleast 8 characters.
+
+Register Account With Unique Username:
+Given that the user is on the website
+And has registered a new user
+When the user is registering a new user with the same username
+Then they should get an error message saying that the username already exists.
+
+
+Booking A Ticket Without Being Logged In
+Given that the user is on the website
+And has pressed tickets link
+When the user is adding a ticket to cart
+Then they should get an error message saying that they must be logged in first.
+
+Booking A Ticket As A Senior
+Given that the user is on the website
+And is logged in
+And has pressed the tickets link
+When the user is choosing the tickets type "Senior"
+Then they should be able to press "Add to cart" and proceed to checkout.
