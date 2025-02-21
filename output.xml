@@ -1,179 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-19T11:41:06.380113" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-02-21T11:34:59.228440" rpa="false" schemaversion="5">
 <suite id="s1" name="SnålKalle &amp; kimOchFamiljen &amp; registerAndLogin">
 <suite id="s1-s1" name="SnålKalle" source="C:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP\SnålKalle.robot">
 <test id="s1-s1-t1" name="Check Price For Entrace Ticket For A New User" line="15">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:06.974807" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:34:59.562399" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:41:06.974123" elapsed="2.805751"/>
+<status status="PASS" start="2025-02-21T11:34:59.562192" elapsed="1.871687"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:35:01.434180" elapsed="0.063118"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:41:06.972810" elapsed="2.807726"/>
+<status status="PASS" start="2025-02-21T11:34:59.561543" elapsed="1.937009"/>
 </kw>
+<kw name="Given User Snåla-Kalle Register And Log In Under Fake Name" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:09.783529" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:01.515415" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:09.782907" elapsed="0.176327"/>
+<status status="PASS" start="2025-02-21T11:35:01.512975" elapsed="0.260347"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:09.782164" elapsed="0.177211"/>
+<status status="PASS" start="2025-02-21T11:35:01.511596" elapsed="0.262539"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:09.960701" level="INFO">Typing text 'Ståla-Nalle' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:35:01.776714" level="INFO">Typing text 'StålaNalle' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:09.960399" elapsed="0.134639"/>
+<status status="PASS" start="2025-02-21T11:35:01.776231" elapsed="0.161312"/>
 </kw>
-<arg>Ståla-Nalle</arg>
-<status status="PASS" start="2025-02-19T11:41:09.959918" elapsed="0.135502"/>
+<arg>StålaNalle</arg>
+<status status="PASS" start="2025-02-21T11:35:01.775074" elapsed="0.162566"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.096718" level="INFO">Typing text 'snålareänsnålast' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:35:01.938166" level="INFO">Typing text 'gemigrabattnu' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.096381" elapsed="0.097011"/>
+<status status="PASS" start="2025-02-21T11:35:01.937999" elapsed="0.099812"/>
 </kw>
-<arg>snålareänsnålast</arg>
-<status status="PASS" start="2025-02-19T11:41:10.095905" elapsed="0.098198"/>
+<arg>gemigrabattnu</arg>
+<status status="PASS" start="2025-02-21T11:35:01.937773" elapsed="0.100150"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.197364" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:02.038483" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.197108" elapsed="0.078668"/>
+<status status="PASS" start="2025-02-21T11:35:02.038315" elapsed="0.058935"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:10.196651" elapsed="0.079327"/>
+<status status="PASS" start="2025-02-21T11:35:02.038074" elapsed="0.059373"/>
 </kw>
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.278948" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:35:02.098358" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.278198" elapsed="0.110876"/>
+<status status="PASS" start="2025-02-21T11:35:02.098104" elapsed="0.060521"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:10.276504" elapsed="0.112727"/>
+<status status="PASS" start="2025-02-21T11:35:02.097710" elapsed="0.061013"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.390425" level="INFO">Typing text 'Ståla-Nalle' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:35:02.159233" level="INFO">Typing text 'StålaNalle' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.390085" elapsed="0.141054"/>
+<status status="PASS" start="2025-02-21T11:35:02.159079" elapsed="0.084921"/>
 </kw>
-<arg>Ståla-Nalle</arg>
-<status status="PASS" start="2025-02-19T11:41:10.389614" elapsed="0.141667"/>
+<arg>StålaNalle</arg>
+<status status="PASS" start="2025-02-21T11:35:02.158858" elapsed="0.085238"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.532172" level="INFO">Typing text 'snålareänsnålast' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:35:02.244611" level="INFO">Typing text 'gemigrabattnu' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.531957" elapsed="0.100926"/>
+<status status="PASS" start="2025-02-21T11:35:02.244441" elapsed="0.078217"/>
 </kw>
-<arg>snålareänsnålast</arg>
-<status status="PASS" start="2025-02-19T11:41:10.531631" elapsed="0.101446"/>
+<arg>gemigrabattnu</arg>
+<status status="PASS" start="2025-02-21T11:35:02.244223" elapsed="0.078603"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:10.634209" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:35:02.323611" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.633951" elapsed="0.104286"/>
+<status status="PASS" start="2025-02-21T11:35:02.323421" elapsed="0.067718"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:10.633565" elapsed="0.104831"/>
+<status status="PASS" start="2025-02-21T11:35:02.323109" elapsed="0.068161"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:12.740005" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-21T11:35:04.391745" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:10.738885" elapsed="2.001666"/>
+<status status="PASS" start="2025-02-21T11:35:02.391389" elapsed="2.000758"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:01.510910" elapsed="2.881536"/>
+</kw>
+<kw name="When The User Snåla-Kalle Selects One Adult Ticket And Proceed To Checkout" owner="keywords">
 <kw name="Click Buy Tickets Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:12.743640" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:04.394178" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
 <arg>//*[@id="tickets-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:12.742904" elapsed="0.098521"/>
+<status status="PASS" start="2025-02-21T11:35:04.393819" elapsed="0.081455"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:12.742027" elapsed="0.099852"/>
+<status status="PASS" start="2025-02-21T11:35:04.393430" elapsed="0.081934"/>
 </kw>
 <kw name="Click Ticket Category" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:12.843702" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<msg time="2025-02-21T11:35:04.475830" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
 <arg>//*[@id="ticket-category"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:12.843301" elapsed="0.094938"/>
+<status status="PASS" start="2025-02-21T11:35:04.475699" elapsed="0.094623"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:12.842498" elapsed="0.095907"/>
+<status status="PASS" start="2025-02-21T11:35:04.475495" elapsed="0.094973"/>
 </kw>
 <kw name="Choose Regular Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:12.939855" level="INFO">Clicking element '//*[@id="ticket-category"]/option[1]'.</msg>
+<msg time="2025-02-21T11:35:04.571138" level="INFO">Clicking element '//*[@id="ticket-category"]/option[1]'.</msg>
 <arg>//*[@id="ticket-category"]/option[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:12.939559" elapsed="0.048752"/>
+<status status="PASS" start="2025-02-21T11:35:04.570969" elapsed="0.058447"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:12.938938" elapsed="0.049634"/>
+<status status="PASS" start="2025-02-21T11:35:04.570660" elapsed="0.059788"/>
 </kw>
 <kw name="Click Quantity Link" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:12.990393" level="INFO">Typing text '1' into text field '//*[@id="ticket-quantity"]'.</msg>
+<msg time="2025-02-21T11:35:04.631706" level="INFO">Typing text '1' into text field '//*[@id="ticket-quantity"]'.</msg>
 <arg>//*[@id="ticket-quantity"]</arg>
 <arg>${numberOfTickets}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:12.989862" elapsed="0.116199"/>
+<status status="PASS" start="2025-02-21T11:35:04.631181" elapsed="0.111989"/>
 </kw>
 <arg>1</arg>
-<status status="PASS" start="2025-02-19T11:41:12.989134" elapsed="0.117118"/>
+<status status="PASS" start="2025-02-21T11:35:04.630726" elapsed="0.112550"/>
 </kw>
 <kw name="Click Add To Cart" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:13.110109" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:04.744079" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
 <arg>//*[@id="ticket-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:13.109227" elapsed="0.108844"/>
+<status status="PASS" start="2025-02-21T11:35:04.743731" elapsed="0.063261"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:13.108749" elapsed="0.110004"/>
+<status status="PASS" start="2025-02-21T11:35:04.743425" elapsed="0.063664"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:13.219935" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:04.807317" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:13.219285" elapsed="0.015133"/>
+<status status="PASS" start="2025-02-21T11:35:04.807203" elapsed="0.010268"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:04.393032" elapsed="0.424598"/>
+</kw>
+<kw name="Then Snåla-Kalle Can Not Add Discount And Removes Ticket From The Cart" owner="keywords">
 <kw name="Click Cart Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:13.236433" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:04.819505" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
 <arg>//*[@id="cart-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:13.236076" elapsed="0.099864"/>
+<status status="PASS" start="2025-02-21T11:35:04.819110" elapsed="0.063132"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:13.235535" elapsed="0.100524"/>
+<status status="PASS" start="2025-02-21T11:35:04.818551" elapsed="0.063790"/>
 </kw>
 <kw name="Click Remove Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:13.337798" level="INFO">Clicking element '//*[@id="cart-details"]/ul/li[1]/button'.</msg>
+<msg time="2025-02-21T11:35:04.882827" level="INFO">Clicking element '//*[@id="cart-details"]/ul/li[1]/button'.</msg>
 <arg>//*[@id="cart-details"]/ul/li[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:13.337411" elapsed="0.078764"/>
+<status status="PASS" start="2025-02-21T11:35:04.882687" elapsed="0.052847"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:13.336769" elapsed="0.079684"/>
+<status status="PASS" start="2025-02-21T11:35:04.882482" elapsed="0.053142"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-21T11:35:09.936141" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-21T11:35:04.935731" elapsed="5.000542"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:04.818093" elapsed="5.118299"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:41:13.417276" elapsed="2.739972"/>
+<status status="PASS" start="2025-02-21T11:35:09.936722" elapsed="2.569986"/>
 </kw>
 <doc>Given that Snåla-Kalle has registerd a new account, is logged in and is on the booking page
 When Snåla-Kalle selects 1 Adult ticket and proceed to checkout
@@ -181,568 +200,628 @@ Then Snåla-Kalle see that they don't get a discount
 And Snåla-Kalle removes the ticket from the cart.</doc>
 <tag>refaktorerat_Alma</tag>
 <tag>Therese</tag>
-<status status="PASS" start="2025-02-19T11:41:06.971781" elapsed="9.186086"/>
+<status status="PASS" start="2025-02-21T11:34:59.560497" elapsed="12.946646"/>
 </test>
 <doc>This file includes test for the persona Snåla-Kalle</doc>
-<status status="PASS" start="2025-02-19T11:41:06.427808" elapsed="9.732717"/>
+<status status="PASS" start="2025-02-21T11:34:59.260571" elapsed="13.248330"/>
 </suite>
 <suite id="s1-s2" name="kimOchFamiljen" source="C:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP\kimOchFamiljen.robot">
 <test id="s1-s2-t1" name="Buying Entrance Ticket For Two Adults And Two Children" line="16">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:16.185468" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:35:12.518600" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:41:16.184736" elapsed="2.351337"/>
+<status status="PASS" start="2025-02-21T11:35:12.518425" elapsed="1.544156"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:35:14.062886" elapsed="0.045340"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:41:16.182993" elapsed="2.353440"/>
+<status status="PASS" start="2025-02-21T11:35:12.518095" elapsed="1.590407"/>
 </kw>
+<kw name="Given User Is Logged In On The Website" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:18.538318" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:14.109997" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:18.537940" elapsed="0.119730"/>
+<status status="PASS" start="2025-02-21T11:35:14.109654" elapsed="0.145995"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:18.537505" elapsed="0.120445"/>
+<status status="PASS" start="2025-02-21T11:35:14.109399" elapsed="0.146475"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:18.659400" level="INFO">Typing text 'test2' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:35:14.256619" level="INFO">Typing text 'test2' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:18.658884" elapsed="0.148981"/>
+<status status="PASS" start="2025-02-21T11:35:14.256443" elapsed="0.169984"/>
 </kw>
 <arg>test2</arg>
-<status status="PASS" start="2025-02-19T11:41:18.658402" elapsed="0.149740"/>
+<status status="PASS" start="2025-02-21T11:35:14.256084" elapsed="0.170512"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:18.810347" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:35:14.427584" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:18.809544" elapsed="0.104881"/>
+<status status="PASS" start="2025-02-21T11:35:14.427263" elapsed="0.081732"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:18.808706" elapsed="0.105961"/>
+<status status="PASS" start="2025-02-21T11:35:14.426818" elapsed="0.082326"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:18.916313" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:14.509855" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:18.915893" elapsed="0.071972"/>
+<status status="PASS" start="2025-02-21T11:35:14.509621" elapsed="0.059104"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:18.915157" elapsed="0.073004"/>
+<status status="PASS" start="2025-02-21T11:35:14.509325" elapsed="0.059516"/>
 </kw>
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:18.989853" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:35:14.569368" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:18.989431" elapsed="0.099464"/>
+<status status="PASS" start="2025-02-21T11:35:14.569237" elapsed="0.059825"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:18.988764" elapsed="0.100401"/>
+<status status="PASS" start="2025-02-21T11:35:14.569023" elapsed="0.060257"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:19.091012" level="INFO">Typing text 'test2' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:35:14.630503" level="INFO">Typing text 'test2' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:19.090486" elapsed="0.181183"/>
+<status status="PASS" start="2025-02-21T11:35:14.630100" elapsed="0.075266"/>
 </kw>
 <arg>test2</arg>
-<status status="PASS" start="2025-02-19T11:41:19.089784" elapsed="0.182149"/>
+<status status="PASS" start="2025-02-21T11:35:14.629572" elapsed="0.075933"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:19.273776" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:35:14.706219" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:19.273273" elapsed="0.107689"/>
+<status status="PASS" start="2025-02-21T11:35:14.705995" elapsed="0.076180"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:19.272562" elapsed="0.108616"/>
+<status status="PASS" start="2025-02-21T11:35:14.705681" elapsed="0.076665"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:19.382438" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:35:14.783630" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:19.382038" elapsed="0.107728"/>
+<status status="PASS" start="2025-02-21T11:35:14.782922" elapsed="0.094917"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:19.381540" elapsed="0.108403"/>
+<status status="PASS" start="2025-02-21T11:35:14.782573" elapsed="0.096241"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:21.491751" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-21T11:35:16.880145" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:19.490857" elapsed="2.001136"/>
+<status status="PASS" start="2025-02-21T11:35:14.879355" elapsed="2.001196"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:14.109048" elapsed="2.771795"/>
+</kw>
+<kw name="When User Adds Two Adult Vip Tickets" owner="keywords">
 <kw name="Click Buy Tickets Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.494087" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:16.883380" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
 <arg>//*[@id="tickets-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.493529" elapsed="0.141368"/>
+<status status="PASS" start="2025-02-21T11:35:16.883067" elapsed="0.072048"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:21.492649" elapsed="0.142493"/>
+<status status="PASS" start="2025-02-21T11:35:16.882605" elapsed="0.072604"/>
 </kw>
 <kw name="Click Ticket Category" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.636833" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<msg time="2025-02-21T11:35:16.955671" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
 <arg>//*[@id="ticket-category"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.636356" elapsed="0.101059"/>
+<status status="PASS" start="2025-02-21T11:35:16.955540" elapsed="0.065681"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:21.635773" elapsed="0.101889"/>
+<status status="PASS" start="2025-02-21T11:35:16.955339" elapsed="0.066005"/>
 </kw>
 <kw name="Choose VIP Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.738892" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:17.021881" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
 <arg>//*[@id="ticket-category"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.738582" elapsed="0.049901"/>
+<status status="PASS" start="2025-02-21T11:35:17.021742" elapsed="0.050677"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:21.738082" elapsed="0.050795"/>
+<status status="PASS" start="2025-02-21T11:35:17.021514" elapsed="0.051132"/>
 </kw>
 <kw name="Click Quantity Link" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.791384" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<msg time="2025-02-21T11:35:17.074907" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
 <arg>//*[@id="ticket-quantity"]</arg>
 <arg>${numberOfTickets}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.790649" elapsed="0.100914"/>
+<status status="PASS" start="2025-02-21T11:35:17.074363" elapsed="0.095647"/>
 </kw>
 <arg>2</arg>
-<status status="PASS" start="2025-02-19T11:41:21.789617" elapsed="0.102223"/>
+<status status="PASS" start="2025-02-21T11:35:17.073645" elapsed="0.096521"/>
 </kw>
 <kw name="Click Add To Cart" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.894115" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:17.171464" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
 <arg>//*[@id="ticket-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.893680" elapsed="0.071684"/>
+<status status="PASS" start="2025-02-21T11:35:17.170722" elapsed="0.062307"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:21.892928" elapsed="0.072831"/>
+<status status="PASS" start="2025-02-21T11:35:17.170389" elapsed="0.062735"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.966619" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:17.233335" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.966290" elapsed="0.010977"/>
+<status status="PASS" start="2025-02-21T11:35:17.233233" elapsed="0.004821"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:16.881794" elapsed="0.356433"/>
+</kw>
+<kw name="And User Adds Two Child Vip Tickets" owner="keywords">
 <kw name="Click Ticket Type" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:21.978881" level="INFO">Clicking element '//*[@id="ticket-type"]'.</msg>
+<msg time="2025-02-21T11:35:17.239735" level="INFO">Clicking element '//*[@id="ticket-type"]'.</msg>
 <arg>//*[@id="ticket-type"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:21.978450" elapsed="0.087613"/>
+<status status="PASS" start="2025-02-21T11:35:17.239501" elapsed="0.082640"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:21.977957" elapsed="0.088300"/>
+<status status="PASS" start="2025-02-21T11:35:17.239140" elapsed="0.083131"/>
 </kw>
 <kw name="Choose Child" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.067651" level="INFO">Clicking element '//*[@id="ticket-type"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:17.322944" level="INFO">Clicking element '//*[@id="ticket-type"]/option[2]'.</msg>
 <arg>//*[@id="ticket-type"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.067341" elapsed="0.039398"/>
+<status status="PASS" start="2025-02-21T11:35:17.322778" elapsed="0.031599"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.066865" elapsed="0.040132"/>
+<status status="PASS" start="2025-02-21T11:35:17.322458" elapsed="0.032010"/>
 </kw>
 <kw name="Click Ticket Category" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.108669" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<msg time="2025-02-21T11:35:17.354913" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
 <arg>//*[@id="ticket-category"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.108129" elapsed="0.123740"/>
+<status status="PASS" start="2025-02-21T11:35:17.354790" elapsed="0.099142"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.107476" elapsed="0.124659"/>
+<status status="PASS" start="2025-02-21T11:35:17.354595" elapsed="0.099468"/>
 </kw>
 <kw name="Choose VIP Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.233371" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:17.454644" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
 <arg>//*[@id="ticket-category"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.233151" elapsed="0.035707"/>
+<status status="PASS" start="2025-02-21T11:35:17.454474" elapsed="0.026906"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.232553" elapsed="0.036640"/>
+<status status="PASS" start="2025-02-21T11:35:17.454225" elapsed="0.027423"/>
 </kw>
 <kw name="Click Quantity Link" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.271250" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<msg time="2025-02-21T11:35:17.483416" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
 <arg>//*[@id="ticket-quantity"]</arg>
 <arg>${numberOfTickets}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.270503" elapsed="0.179996"/>
+<status status="PASS" start="2025-02-21T11:35:17.482684" elapsed="0.080455"/>
 </kw>
 <arg>2</arg>
-<status status="PASS" start="2025-02-19T11:41:22.269793" elapsed="0.180983"/>
+<status status="PASS" start="2025-02-21T11:35:17.482169" elapsed="0.081133"/>
 </kw>
 <kw name="Click Add To Cart" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.452306" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:17.565340" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
 <arg>//*[@id="ticket-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.451870" elapsed="0.051909"/>
+<status status="PASS" start="2025-02-21T11:35:17.565003" elapsed="0.043228"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.451312" elapsed="0.052744"/>
+<status status="PASS" start="2025-02-21T11:35:17.563582" elapsed="0.044752"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.504755" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:17.608551" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.504492" elapsed="0.010649"/>
+<status status="PASS" start="2025-02-21T11:35:17.608448" elapsed="0.008645"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:17.238680" elapsed="0.378636"/>
+</kw>
+<kw name="Then User Proceeds To Checkout" owner="keywords">
 <kw name="Click Cart Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.517620" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:17.618485" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
 <arg>//*[@id="cart-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.516971" elapsed="0.137676"/>
+<status status="PASS" start="2025-02-21T11:35:17.618272" elapsed="0.065025"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.515813" elapsed="0.139112"/>
+<status status="PASS" start="2025-02-21T11:35:17.618042" elapsed="0.065449"/>
 </kw>
 <kw name="Click Proceed To Checkout" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:22.656737" level="INFO">Clicking element '//*[@id="checkout-button"]'.</msg>
+<msg time="2025-02-21T11:35:17.684172" level="INFO">Clicking element '//*[@id="checkout-button"]'.</msg>
 <arg>//*[@id="checkout-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.656326" elapsed="0.165901"/>
+<status status="PASS" start="2025-02-21T11:35:17.683991" elapsed="0.059909"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:22.655663" elapsed="0.166843"/>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:17.744661" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-02-21T11:35:17.744536" elapsed="0.006641"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:17.683695" elapsed="0.067594"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-21T11:35:22.752030" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-21T11:35:17.751409" elapsed="5.000915"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:17.617757" elapsed="5.134703"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:41:22.823458" elapsed="2.744472"/>
+<status status="PASS" start="2025-02-21T11:35:22.753037" elapsed="2.456534"/>
 </kw>
 <doc>Given that Kim is on the website for juraStina-Kalle,
 When he is booking 2 VIP-tickets for 2 adults and 2 VIP-tickets for 2 children,
 Then he should be able to proceed to checkout and pay for his tickets.</doc>
 <tag>Alma &amp; Therese</tag>
-<status status="PASS" start="2025-02-19T11:41:16.180179" elapsed="9.388252"/>
+<status status="PASS" start="2025-02-21T11:35:12.517248" elapsed="12.692681"/>
 </test>
-<test id="s1-s2-t2" name="Book Safari Tour On The Weekend" line="51">
+<test id="s1-s2-t2" name="Book Safari Tour On The Weekend" line="28">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:25.574141" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:35:25.213025" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:41:25.573477" elapsed="1.914598"/>
+<status status="PASS" start="2025-02-21T11:35:25.212831" elapsed="1.538715"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:35:26.751774" elapsed="0.029551"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:41:25.572379" elapsed="1.915963"/>
+<status status="PASS" start="2025-02-21T11:35:25.212464" elapsed="1.569016"/>
 </kw>
+<kw name="Given User Is logged In On The Website" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.489784" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:26.783109" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.489489" elapsed="0.097177"/>
+<status status="PASS" start="2025-02-21T11:35:26.782638" elapsed="0.173639"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:27.489015" elapsed="0.097852"/>
+<status status="PASS" start="2025-02-21T11:35:26.782287" elapsed="0.174155"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.588737" level="INFO">Typing text 'test2' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:35:26.957402" level="INFO">Typing text 'test2' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.588234" elapsed="0.111256"/>
+<status status="PASS" start="2025-02-21T11:35:26.957118" elapsed="0.172082"/>
 </kw>
 <arg>test2</arg>
-<status status="PASS" start="2025-02-19T11:41:27.587505" elapsed="0.112306"/>
+<status status="PASS" start="2025-02-21T11:35:26.956652" elapsed="0.172799"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.701224" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:35:27.131763" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.700763" elapsed="0.105787"/>
+<status status="PASS" start="2025-02-21T11:35:27.131013" elapsed="0.081937"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:27.700260" elapsed="0.106485"/>
+<status status="PASS" start="2025-02-21T11:35:27.129807" elapsed="0.083294"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.809196" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:27.213798" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.808198" elapsed="0.097437"/>
+<status status="PASS" start="2025-02-21T11:35:27.213580" elapsed="0.055733"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:27.807249" elapsed="0.098630"/>
+<status status="PASS" start="2025-02-21T11:35:27.213297" elapsed="0.056223"/>
 </kw>
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.909416" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:35:27.270415" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.908779" elapsed="0.083465"/>
+<status status="PASS" start="2025-02-21T11:35:27.270083" elapsed="0.066704"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:27.907135" elapsed="0.085576"/>
+<status status="PASS" start="2025-02-21T11:35:27.269737" elapsed="0.067146"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:27.994304" level="INFO">Typing text 'test2' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:35:27.337371" level="INFO">Typing text 'test2' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:27.993853" elapsed="0.104947"/>
+<status status="PASS" start="2025-02-21T11:35:27.337227" elapsed="0.076788"/>
 </kw>
 <arg>test2</arg>
-<status status="PASS" start="2025-02-19T11:41:27.993259" elapsed="0.105880"/>
+<status status="PASS" start="2025-02-21T11:35:27.337009" elapsed="0.077124"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:28.100993" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:35:27.414834" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:28.100516" elapsed="0.097144"/>
+<status status="PASS" start="2025-02-21T11:35:27.414542" elapsed="0.077353"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:28.099693" elapsed="0.098350"/>
+<status status="PASS" start="2025-02-21T11:35:27.414284" elapsed="0.077876"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:28.200366" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:35:27.494531" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:28.199766" elapsed="0.144185"/>
+<status status="PASS" start="2025-02-21T11:35:27.494323" elapsed="0.080094"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:28.198880" elapsed="0.145467"/>
+<status status="PASS" start="2025-02-21T11:35:27.492906" elapsed="0.081668"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:33.346454" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-02-21T11:35:29.575216" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:28.345570" elapsed="5.001157"/>
+<status status="PASS" start="2025-02-21T11:35:27.574757" elapsed="2.000601"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:26.781947" elapsed="2.793520"/>
+</kw>
+<kw name="And User Has Bought Vip Tickets" owner="keywords">
+<kw name="User Adds Two Adult Vip Tickets" owner="keywords">
 <kw name="Click Buy Tickets Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.348783" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:29.576798" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
 <arg>//*[@id="tickets-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.348368" elapsed="0.089946"/>
+<status status="PASS" start="2025-02-21T11:35:29.576500" elapsed="0.063969"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:33.347677" elapsed="0.090770"/>
+<status status="PASS" start="2025-02-21T11:35:29.576295" elapsed="0.064273"/>
 </kw>
 <kw name="Click Ticket Category" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.439573" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<msg time="2025-02-21T11:35:29.641035" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
 <arg>//*[@id="ticket-category"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.439327" elapsed="0.100896"/>
+<status status="PASS" start="2025-02-21T11:35:29.640901" elapsed="0.063494"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:33.438918" elapsed="0.101549"/>
+<status status="PASS" start="2025-02-21T11:35:29.640694" elapsed="0.063961"/>
 </kw>
 <kw name="Choose VIP Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.542073" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:29.705765" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
 <arg>//*[@id="ticket-category"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.541699" elapsed="0.041258"/>
+<status status="PASS" start="2025-02-21T11:35:29.705533" elapsed="0.059629"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:33.541066" elapsed="0.042313"/>
+<status status="PASS" start="2025-02-21T11:35:29.705046" elapsed="0.060267"/>
 </kw>
 <kw name="Click Quantity Link" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.585686" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<msg time="2025-02-21T11:35:29.766060" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
 <arg>//*[@id="ticket-quantity"]</arg>
 <arg>${numberOfTickets}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.585134" elapsed="0.193064"/>
+<status status="PASS" start="2025-02-21T11:35:29.765827" elapsed="0.088573"/>
 </kw>
 <arg>2</arg>
-<status status="PASS" start="2025-02-19T11:41:33.584235" elapsed="0.194246"/>
+<status status="PASS" start="2025-02-21T11:35:29.765500" elapsed="0.089110"/>
 </kw>
 <kw name="Click Add To Cart" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.780460" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:29.855196" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
 <arg>//*[@id="ticket-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.780038" elapsed="0.109343"/>
+<status status="PASS" start="2025-02-21T11:35:29.854984" elapsed="0.060721"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:33.779337" elapsed="0.110283"/>
+<status status="PASS" start="2025-02-21T11:35:29.854748" elapsed="0.061158"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.891923" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:29.916348" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.891511" elapsed="0.015966"/>
+<status status="PASS" start="2025-02-21T11:35:29.916141" elapsed="0.005930"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:29.576162" elapsed="0.346038"/>
+</kw>
+<kw name="User Adds Two Child Vip Tickets" owner="keywords">
 <kw name="Click Ticket Type" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:33.909965" level="INFO">Clicking element '//*[@id="ticket-type"]'.</msg>
+<msg time="2025-02-21T11:35:29.922942" level="INFO">Clicking element '//*[@id="ticket-type"]'.</msg>
 <arg>//*[@id="ticket-type"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:33.909551" elapsed="0.148872"/>
+<status status="PASS" start="2025-02-21T11:35:29.922802" elapsed="0.075664"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:33.908836" elapsed="0.149893"/>
+<status status="PASS" start="2025-02-21T11:35:29.922642" elapsed="0.075976"/>
 </kw>
 <kw name="Choose Child" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.060880" level="INFO">Clicking element '//*[@id="ticket-type"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:29.999157" level="INFO">Clicking element '//*[@id="ticket-type"]/option[2]'.</msg>
 <arg>//*[@id="ticket-type"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.060413" elapsed="0.064979"/>
+<status status="PASS" start="2025-02-21T11:35:29.999017" elapsed="0.024650"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.059729" elapsed="0.065943"/>
+<status status="PASS" start="2025-02-21T11:35:29.998794" elapsed="0.024973"/>
 </kw>
 <kw name="Click Ticket Category" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.127684" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<msg time="2025-02-21T11:35:30.024233" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
 <arg>//*[@id="ticket-category"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.126958" elapsed="0.090746"/>
+<status status="PASS" start="2025-02-21T11:35:30.024109" elapsed="0.123289"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.126240" elapsed="0.091690"/>
+<status status="PASS" start="2025-02-21T11:35:30.023905" elapsed="0.123607"/>
 </kw>
 <kw name="Choose VIP Ticket" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.219808" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:30.148064" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
 <arg>//*[@id="ticket-category"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.219380" elapsed="0.042187"/>
+<status status="PASS" start="2025-02-21T11:35:30.147905" elapsed="0.024498"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.218527" elapsed="0.043684"/>
+<status status="PASS" start="2025-02-21T11:35:30.147672" elapsed="0.024823"/>
 </kw>
 <kw name="Click Quantity Link" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.265559" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<msg time="2025-02-21T11:35:30.172977" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
 <arg>//*[@id="ticket-quantity"]</arg>
 <arg>${numberOfTickets}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.264824" elapsed="0.140157"/>
+<status status="PASS" start="2025-02-21T11:35:30.172830" elapsed="0.093117"/>
 </kw>
 <arg>2</arg>
-<status status="PASS" start="2025-02-19T11:41:34.263394" elapsed="0.141791"/>
+<status status="PASS" start="2025-02-21T11:35:30.172614" elapsed="0.093427"/>
 </kw>
 <kw name="Click Add To Cart" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.406609" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:30.266512" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
 <arg>//*[@id="ticket-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.406206" elapsed="0.077966"/>
+<status status="PASS" start="2025-02-21T11:35:30.266370" elapsed="0.047101"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.405608" elapsed="0.078755"/>
+<status status="PASS" start="2025-02-21T11:35:30.266175" elapsed="0.047421"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.485681" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:30.313940" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.485370" elapsed="0.016152"/>
+<status status="PASS" start="2025-02-21T11:35:30.313752" elapsed="0.007909"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:29.922393" elapsed="0.399519"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:29.575928" elapsed="0.746060"/>
+</kw>
+<kw name="Then User Can Book Safari Tours" owner="keywords">
 <kw name="Click Book Safaris Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.503692" level="INFO">Clicking element '//*[@id="safari-nav"]'.</msg>
+<msg time="2025-02-21T11:35:30.323064" level="INFO">Clicking element '//*[@id="safari-nav"]'.</msg>
 <arg>//*[@id="safari-nav"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.503160" elapsed="0.175079"/>
+<status status="PASS" start="2025-02-21T11:35:30.322848" elapsed="0.095749"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.502255" elapsed="0.176374"/>
+<status status="PASS" start="2025-02-21T11:35:30.322682" elapsed="0.096054"/>
 </kw>
 <kw name="Click Select Safari Date" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.681047" level="INFO">Typing text '002025-02-22' into text field '//*[@id="safari-date"]'.</msg>
+<msg time="2025-02-21T11:35:30.419407" level="INFO">Typing text '002025-02-22' into text field '//*[@id="safari-date"]'.</msg>
 <arg>//*[@id="safari-date"]</arg>
 <arg>${chooseDate}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.680471" elapsed="0.184219"/>
+<status status="PASS" start="2025-02-21T11:35:30.419240" elapsed="0.070752"/>
 </kw>
 <arg>002025-02-22</arg>
-<status status="PASS" start="2025-02-19T11:41:34.679461" elapsed="0.185559"/>
+<status status="PASS" start="2025-02-21T11:35:30.418928" elapsed="0.071193"/>
 </kw>
 <kw name="Select Safari Type Extreme Thrill Pack" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:34.867788" level="INFO">Clicking element '//*[@id="safari-type"]/option[4]'.</msg>
+<msg time="2025-02-21T11:35:30.490620" level="INFO">Clicking element '//*[@id="safari-type"]/option[4]'.</msg>
 <arg>//*[@id="safari-type"]/option[4]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.867242" elapsed="0.079084"/>
+<status status="PASS" start="2025-02-21T11:35:30.490483" elapsed="0.026969"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:34.866288" elapsed="0.080314"/>
+<status status="PASS" start="2025-02-21T11:35:30.490274" elapsed="0.027289"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:39.948420" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-21T11:35:35.518120" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:34.947303" elapsed="5.001462"/>
+<status status="PASS" start="2025-02-21T11:35:30.517703" elapsed="5.000852"/>
 </kw>
 <kw name="Click Add To Cart Safari" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:39.951075" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:35.519342" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
 <arg>//*[@id="safari-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:39.950440" elapsed="0.103343"/>
+<status status="PASS" start="2025-02-21T11:35:35.519207" elapsed="0.042237"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:39.949570" elapsed="0.104408"/>
+<status status="PASS" start="2025-02-21T11:35:35.518834" elapsed="0.042711"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.054589" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:35.561759" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.054374" elapsed="0.009130"/>
+<status status="PASS" start="2025-02-21T11:35:35.561657" elapsed="0.004061"/>
 </kw>
 <kw name="Click Select Safari Date" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.065132" level="INFO">Typing text '002025-02-22' into text field '//*[@id="safari-date"]'.</msg>
+<msg time="2025-02-21T11:35:35.567854" level="INFO">Typing text '002025-02-22' into text field '//*[@id="safari-date"]'.</msg>
 <arg>//*[@id="safari-date"]</arg>
 <arg>${chooseDate}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.064751" elapsed="0.125317"/>
+<status status="PASS" start="2025-02-21T11:35:35.567350" elapsed="0.063314"/>
 </kw>
 <arg>002025-02-22</arg>
-<status status="PASS" start="2025-02-19T11:41:40.064190" elapsed="0.126687"/>
+<status status="PASS" start="2025-02-21T11:35:35.566388" elapsed="0.064375"/>
 </kw>
 <kw name="Select Safari Type Herbivore With Feeding" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.193285" level="INFO">Clicking element '//*[@id="safari-type"]/option[3]'.</msg>
+<msg time="2025-02-21T11:35:35.631312" level="INFO">Clicking element '//*[@id="safari-type"]/option[3]'.</msg>
 <arg>//*[@id="safari-type"]/option[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.192979" elapsed="0.055281"/>
+<status status="PASS" start="2025-02-21T11:35:35.631187" elapsed="0.022104"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:40.192475" elapsed="0.056065"/>
+<status status="PASS" start="2025-02-21T11:35:35.630986" elapsed="0.022457"/>
 </kw>
 <kw name="Click Add To Cart Safari" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.250197" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:35.653898" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
 <arg>//*[@id="safari-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.249883" elapsed="0.102002"/>
+<status status="PASS" start="2025-02-21T11:35:35.653774" elapsed="0.049931"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:40.249348" elapsed="0.102816"/>
+<status status="PASS" start="2025-02-21T11:35:35.653571" elapsed="0.050225"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.352943" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-21T11:35:35.703996" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.352658" elapsed="0.011437"/>
+<status status="PASS" start="2025-02-21T11:35:35.703901" elapsed="0.003251"/>
 </kw>
+<kw name="User Proceeds To Checkout" owner="keywords">
 <kw name="Click Cart Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.366081" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:35.709632" level="INFO">Clicking element '//*[@id="cart-nav"]/a'.</msg>
 <arg>//*[@id="cart-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.365601" elapsed="0.101769"/>
+<status status="PASS" start="2025-02-21T11:35:35.709268" elapsed="0.061437"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:40.364899" elapsed="0.102873"/>
+<status status="PASS" start="2025-02-21T11:35:35.708763" elapsed="0.062032"/>
 </kw>
 <kw name="Click Proceed To Checkout" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:40.470263" level="INFO">Clicking element '//*[@id="checkout-button"]'.</msg>
+<msg time="2025-02-21T11:35:35.771253" level="INFO">Clicking element '//*[@id="checkout-button"]'.</msg>
 <arg>//*[@id="checkout-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.469591" elapsed="0.125026"/>
+<status status="PASS" start="2025-02-21T11:35:35.771122" elapsed="0.067984"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:40.468554" elapsed="0.126473"/>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:35.839346" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-02-21T11:35:35.839248" elapsed="0.007865"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:35.770924" elapsed="0.076281"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-21T11:35:40.848100" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-21T11:35:35.847343" elapsed="5.000994"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:35.707845" elapsed="5.140691"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:30.322414" elapsed="10.526249"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:41:40.595969" elapsed="2.693403"/>
+<status status="PASS" start="2025-02-21T11:35:40.849830" elapsed="2.473080"/>
 </kw>
 <doc>Given that Kim has registered an account and booked VIP-entrance tickets,
 When he choose safari-dates,
@@ -750,154 +829,292 @@ Then he should be able to book safari on the weekends specifically tours that ge
 <tag>refaktorerat_ Kotaiba</tag>
 <tag>refaktorerat_Therese</tag>
 <tag>Therese &amp; Alma, refaktorerat_ Alma</tag>
-<status status="PASS" start="2025-02-19T11:41:25.570521" elapsed="17.719364"/>
+<status status="PASS" start="2025-02-21T11:35:25.211493" elapsed="18.111669"/>
 </test>
-<test id="s1-s2-t3" name="Book Safari Tour With Date That Has Passed" line="97">
+<test id="s1-s2-t3" name="Book Safari Tour With Date That Has Passed" line="39">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:43.297012" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:35:43.325242" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:41:43.296303" elapsed="2.049092"/>
+<status status="PASS" start="2025-02-21T11:35:43.325045" elapsed="1.447552"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:35:44.772845" elapsed="0.136211"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:41:43.295129" elapsed="2.050451"/>
+<status status="PASS" start="2025-02-21T11:35:43.324743" elapsed="1.584459"/>
 </kw>
+<kw name="Given User Is logged In On The Website" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.346967" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:35:44.910405" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.346726" elapsed="0.115924"/>
+<status status="PASS" start="2025-02-21T11:35:44.910203" elapsed="0.143362"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:45.346076" elapsed="0.116814"/>
+<status status="PASS" start="2025-02-21T11:35:44.909957" elapsed="0.143793"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.464122" level="INFO">Typing text 'test3' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:35:45.054631" level="INFO">Typing text 'test2' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.463832" elapsed="0.124787"/>
+<status status="PASS" start="2025-02-21T11:35:45.054384" elapsed="0.166820"/>
 </kw>
-<arg>test3</arg>
-<status status="PASS" start="2025-02-19T11:41:45.463383" elapsed="0.126021"/>
+<arg>test2</arg>
+<status status="PASS" start="2025-02-21T11:35:45.053978" elapsed="0.167404"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.591331" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:35:45.222044" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.590875" elapsed="0.143598"/>
+<status status="PASS" start="2025-02-21T11:35:45.221797" elapsed="0.066630"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:45.590302" elapsed="0.144600"/>
+<status status="PASS" start="2025-02-21T11:35:45.221531" elapsed="0.067002"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.736789" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:45.289089" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.736370" elapsed="0.115989"/>
+<status status="PASS" start="2025-02-21T11:35:45.288954" elapsed="0.047460"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:45.735696" elapsed="0.116928"/>
+<status status="PASS" start="2025-02-21T11:35:45.288713" elapsed="0.047796"/>
 </kw>
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.854558" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:35:45.337005" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.854091" elapsed="0.133938"/>
+<status status="PASS" start="2025-02-21T11:35:45.336853" elapsed="0.047276"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:45.853401" elapsed="0.135027"/>
+<status status="PASS" start="2025-02-21T11:35:45.336633" elapsed="0.047593"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:45.991548" level="INFO">Typing text 'test3' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:35:45.384764" level="INFO">Typing text 'test2' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:45.990752" elapsed="0.162716"/>
+<status status="PASS" start="2025-02-21T11:35:45.384603" elapsed="0.092788"/>
 </kw>
-<arg>test3</arg>
-<status status="PASS" start="2025-02-19T11:41:45.989646" elapsed="0.164075"/>
+<arg>test2</arg>
+<status status="PASS" start="2025-02-21T11:35:45.384378" elapsed="0.093315"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:46.156636" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:35:45.479907" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:46.155248" elapsed="0.128138"/>
+<status status="PASS" start="2025-02-21T11:35:45.479576" elapsed="0.083108"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:41:46.154445" elapsed="0.129222"/>
+<status status="PASS" start="2025-02-21T11:35:45.478490" elapsed="0.084393"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:46.287363" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:35:45.563644" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:46.286712" elapsed="0.100506"/>
+<status status="PASS" start="2025-02-21T11:35:45.563453" elapsed="0.070856"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:46.285180" elapsed="0.102300"/>
+<status status="PASS" start="2025-02-21T11:35:45.563116" elapsed="0.071458"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:51.389281" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<msg time="2025-02-21T11:35:47.635529" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:46.388357" elapsed="5.001197"/>
+<status status="PASS" start="2025-02-21T11:35:45.634733" elapsed="2.000913"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:35:44.909641" elapsed="2.726090"/>
+</kw>
+<kw name="And User Has Bought Vip Tickets" owner="keywords">
+<kw name="User Adds Two Adult Vip Tickets" owner="keywords">
+<kw name="Click Buy Tickets Link" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.636740" level="INFO">Clicking element '//*[@id="tickets-nav"]/a'.</msg>
+<arg>//*[@id="tickets-nav"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.636619" elapsed="0.062945"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.636484" elapsed="0.063172"/>
+</kw>
+<kw name="Click Ticket Category" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.700097" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<arg>//*[@id="ticket-category"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.699975" elapsed="0.068334"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.699785" elapsed="0.068625"/>
+</kw>
+<kw name="Choose VIP Ticket" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.769173" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<arg>//*[@id="ticket-category"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.768958" elapsed="0.033473"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.768603" elapsed="0.033920"/>
+</kw>
+<kw name="Click Quantity Link" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.803011" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<arg>//*[@id="ticket-quantity"]</arg>
+<arg>${numberOfTickets}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.802862" elapsed="0.112238"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2025-02-21T11:35:47.802646" elapsed="0.112588"/>
+</kw>
+<kw name="Click Add To Cart" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.916910" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<arg>//*[@id="ticket-form"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.916636" elapsed="0.065735"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.915901" elapsed="0.066700"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.983276" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.982890" elapsed="0.007303"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.636350" elapsed="0.354036"/>
+</kw>
+<kw name="User Adds Two Child Vip Tickets" owner="keywords">
+<kw name="Click Ticket Type" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:47.992881" level="INFO">Clicking element '//*[@id="ticket-type"]'.</msg>
+<arg>//*[@id="ticket-type"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:47.992070" elapsed="0.073455"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.991371" elapsed="0.074339"/>
+</kw>
+<kw name="Choose Child" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.066511" level="INFO">Clicking element '//*[@id="ticket-type"]/option[2]'.</msg>
+<arg>//*[@id="ticket-type"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.066274" elapsed="0.026378"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:48.065922" elapsed="0.026930"/>
+</kw>
+<kw name="Click Ticket Category" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.094625" level="INFO">Clicking element '//*[@id="ticket-category"]'.</msg>
+<arg>//*[@id="ticket-category"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.093552" elapsed="0.120534"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:48.093125" elapsed="0.121104"/>
+</kw>
+<kw name="Choose VIP Ticket" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.214898" level="INFO">Clicking element '//*[@id="ticket-category"]/option[2]'.</msg>
+<arg>//*[@id="ticket-category"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.214661" elapsed="0.028785"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:48.214412" elapsed="0.029195"/>
+</kw>
+<kw name="Click Quantity Link" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.244864" level="INFO">Typing text '2' into text field '//*[@id="ticket-quantity"]'.</msg>
+<arg>//*[@id="ticket-quantity"]</arg>
+<arg>${numberOfTickets}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.244522" elapsed="0.101569"/>
+</kw>
+<arg>2</arg>
+<status status="PASS" start="2025-02-21T11:35:48.243833" elapsed="0.102350"/>
+</kw>
+<kw name="Click Add To Cart" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.346640" level="INFO">Clicking element '//*[@id="ticket-form"]/button'.</msg>
+<arg>//*[@id="ticket-form"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.346512" elapsed="0.050581"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:48.346314" elapsed="0.050888"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:35:48.397430" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-02-21T11:35:48.397321" elapsed="0.004471"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.990666" elapsed="0.411218"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:47.636136" elapsed="0.765793"/>
+</kw>
+<kw name="Then User Can Not Book A Safari With A Passed Date" owner="keywords">
 <kw name="Click Book Safaris Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:51.391611" level="INFO">Clicking element '//*[@id="safari-nav"]'.</msg>
+<msg time="2025-02-21T11:35:48.402795" level="INFO">Clicking element '//*[@id="safari-nav"]'.</msg>
 <arg>//*[@id="safari-nav"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:51.391196" elapsed="0.119634"/>
+<status status="PASS" start="2025-02-21T11:35:48.402620" elapsed="0.079617"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:51.390493" elapsed="0.120610"/>
+<status status="PASS" start="2025-02-21T11:35:48.402443" elapsed="0.080254"/>
 </kw>
 <kw name="Click Select Safari Date" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:51.512814" level="INFO">Typing text '002025-01-01' into text field '//*[@id="safari-date"]'.</msg>
+<msg time="2025-02-21T11:35:48.486536" level="INFO">Typing text '002025-01-01' into text field '//*[@id="safari-date"]'.</msg>
 <arg>//*[@id="safari-date"]</arg>
 <arg>${chooseDate}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:51.512391" elapsed="0.074713"/>
+<status status="PASS" start="2025-02-21T11:35:48.483343" elapsed="0.088649"/>
 </kw>
 <arg>002025-01-01</arg>
-<status status="PASS" start="2025-02-19T11:41:51.511725" elapsed="0.075663"/>
+<status status="PASS" start="2025-02-21T11:35:48.483048" elapsed="0.089051"/>
 </kw>
 <kw name="Select Safari Type T-rex Rubmle" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:51.589435" level="INFO">Clicking element '//*[@id="safari-type"]/option[2]'.</msg>
+<msg time="2025-02-21T11:35:48.574606" level="INFO">Clicking element '//*[@id="safari-type"]/option[2]'.</msg>
 <arg>//*[@id="safari-type"]/option[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:51.589007" elapsed="0.034817"/>
+<status status="PASS" start="2025-02-21T11:35:48.573244" elapsed="0.030609"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:51.588241" elapsed="0.035710"/>
+<status status="PASS" start="2025-02-21T11:35:48.572299" elapsed="0.031647"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T11:41:56.625559" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-21T11:35:53.604284" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T11:41:51.624555" elapsed="5.001282"/>
+<status status="PASS" start="2025-02-21T11:35:48.604045" elapsed="5.000347"/>
 </kw>
 <kw name="Click Add To Cart Safari" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:41:56.627764" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
+<msg time="2025-02-21T11:35:53.605011" level="INFO">Clicking element '//*[@id="safari-form"]/button'.</msg>
 <arg>//*[@id="safari-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:41:56.627362" elapsed="0.150244"/>
+<status status="PASS" start="2025-02-21T11:35:53.604823" elapsed="0.045890"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:41:56.626689" elapsed="0.151315"/>
+<status status="PASS" start="2025-02-21T11:35:53.604580" elapsed="0.046270"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-21T11:35:58.651395" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-21T11:35:53.651064" elapsed="5.000425"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:35:48.402222" elapsed="10.249399"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:41:56.778843" elapsed="3.961271"/>
+<status status="PASS" start="2025-02-21T11:35:58.652036" elapsed="2.357254"/>
 </kw>
 <doc>Given that Kim is trying to book a date for his safari tour,
 When he is trying to book a date that has already passed,
@@ -905,108 +1122,121 @@ Then he should get an error message.</doc>
 <tag>Kotaiba, refaktorerat_ Alma</tag>
 <tag>refaktorerat_ Kotaiba</tag>
 <tag>refaktorerat_ Therese</tag>
-<status status="PASS" start="2025-02-19T11:41:43.293095" elapsed="17.447593"/>
+<status status="PASS" start="2025-02-21T11:35:43.324062" elapsed="17.685559"/>
 </test>
 <doc>Test designed for the persona Kim and his family.</doc>
-<status status="PASS" start="2025-02-19T11:41:16.163414" elapsed="44.579919"/>
+<status status="PASS" start="2025-02-21T11:35:12.510761" elapsed="48.499925"/>
 </suite>
 <suite id="s1-s3" name="registerAndLogin" source="C:\Users\almab\OneDrive\Dokument\CT Jurasstina-kalle park\grupp-3---JKP\registerAndLogin.robot">
 <test id="s1-s3-t1" name="Register New Account Valid Login" line="17">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:00.769267" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:36:01.022955" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:42:00.768719" elapsed="1.948607"/>
+<status status="PASS" start="2025-02-21T11:36:01.022719" elapsed="1.585019"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:36:02.608065" elapsed="0.108589"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:42:00.767808" elapsed="1.949884"/>
+<status status="PASS" start="2025-02-21T11:36:01.022371" elapsed="1.694428"/>
 </kw>
+<kw name="Given User Register New Account Valid Login" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:02.718750" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:36:02.717937" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:02.718502" elapsed="0.108420"/>
+<status status="PASS" start="2025-02-21T11:36:02.717737" elapsed="0.198135"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:02.718113" elapsed="0.108989"/>
+<status status="PASS" start="2025-02-21T11:36:02.717492" elapsed="0.198535"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:02.828114" level="INFO">Typing text 'test' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:36:02.916805" level="INFO">Typing text 'test' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:02.827817" elapsed="0.138882"/>
+<status status="PASS" start="2025-02-21T11:36:02.916577" elapsed="0.113658"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-19T11:42:02.827398" elapsed="0.139486"/>
+<status status="PASS" start="2025-02-21T11:36:02.916239" elapsed="0.114437"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:02.967729" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:36:03.033772" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:02.967519" elapsed="0.099364"/>
+<status status="PASS" start="2025-02-21T11:36:03.033232" elapsed="0.076738"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:42:02.967220" elapsed="0.099796"/>
+<status status="PASS" start="2025-02-21T11:36:03.031343" elapsed="0.078777"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:02.717175" elapsed="0.393024"/>
+</kw>
+<kw name="When User Enters A Valid Username And Password And Submits The Registration Form" owner="keywords">
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:03.068026" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:36:03.111176" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.067734" elapsed="0.080512"/>
+<status status="PASS" start="2025-02-21T11:36:03.111038" elapsed="0.053693"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:03.067302" elapsed="0.081062"/>
+<status status="PASS" start="2025-02-21T11:36:03.110869" elapsed="0.053953"/>
 </kw>
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:03.149103" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:36:03.165270" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.148942" elapsed="0.084128"/>
+<status status="PASS" start="2025-02-21T11:36:03.165150" elapsed="0.049825"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:03.148672" elapsed="0.084551"/>
+<status status="PASS" start="2025-02-21T11:36:03.164952" elapsed="0.050116"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:03.234252" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:36:03.215570" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.233960" elapsed="0.150185"/>
+<status status="PASS" start="2025-02-21T11:36:03.215418" elapsed="0.074489"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-19T11:42:03.233584" elapsed="0.150895"/>
+<status status="PASS" start="2025-02-21T11:36:03.215193" elapsed="0.074960"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:03.386754" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:36:03.291281" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.385941" elapsed="0.166327"/>
+<status status="PASS" start="2025-02-21T11:36:03.290981" elapsed="0.078051"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:42:03.385164" elapsed="0.167272"/>
+<status status="PASS" start="2025-02-21T11:36:03.290513" elapsed="0.078632"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:03.110593" elapsed="0.258600"/>
+</kw>
+<kw name="Then User Account Should Created Successfully" owner="keywords">
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:03.554246" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:36:03.370396" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.553302" elapsed="0.095161"/>
+<status status="PASS" start="2025-02-21T11:36:03.370160" elapsed="0.090210"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:03.552783" elapsed="0.095864"/>
+<status status="PASS" start="2025-02-21T11:36:03.369906" elapsed="0.090758"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:03.369545" elapsed="0.091212"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:42:03.649156" elapsed="2.316844"/>
+<status status="PASS" start="2025-02-21T11:36:03.461317" elapsed="2.356767"/>
 </kw>
 <doc>Given User is on the registration page
 When User enters a valid username and password
@@ -1014,330 +1244,374 @@ And submits the registration form
 Then the account should be created successfully
 And User should be able to log in with the registered credentials</doc>
 <tag>Alma</tag>
-<tag>refaktorera_Therese</tag>
-<status status="PASS" start="2025-02-19T11:42:00.765425" elapsed="5.201223"/>
+<tag>refaktorerat_Alma</tag>
+<tag>refaktorerat_Kotaiba</tag>
+<tag>refaktorerat_Therese</tag>
+<status status="PASS" start="2025-02-21T11:36:01.021730" elapsed="4.796615"/>
 </test>
-<test id="s1-s3-t2" name="No Registration Of New Account Log in Invalid" line="36">
+<test id="s1-s3-t2" name="No Registration Of New Account Log in Invalid" line="30">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:05.972348" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:36:05.819978" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:42:05.971922" elapsed="1.846688"/>
+<status status="PASS" start="2025-02-21T11:36:05.819823" elapsed="1.504702"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:36:07.324747" elapsed="0.047960"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:42:05.971098" elapsed="1.847700"/>
+<status status="PASS" start="2025-02-21T11:36:05.819542" elapsed="1.553321"/>
 </kw>
+<kw name="Given User Try To Login Without Register New Account" owner="keywords">
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:07.822836" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:36:07.373934" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:07.822241" elapsed="0.203214"/>
+<status status="PASS" start="2025-02-21T11:36:07.373787" elapsed="0.145045"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:07.821382" elapsed="0.204315"/>
+<status status="PASS" start="2025-02-21T11:36:07.373612" elapsed="0.145367"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:07.373334" elapsed="0.145710"/>
+</kw>
+<kw name="When User Enters An Unregistered Username And Password And Attempts To Log In" owner="keywords">
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:08.026574" level="INFO">Typing text 'wrong_user' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:36:07.519865" level="INFO">Typing text 'wrong_user' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.026374" elapsed="0.136080"/>
+<status status="PASS" start="2025-02-21T11:36:07.519685" elapsed="0.183428"/>
 </kw>
 <arg>wrong_user</arg>
-<status status="PASS" start="2025-02-19T11:42:08.026075" elapsed="0.136547"/>
+<status status="PASS" start="2025-02-21T11:36:07.519499" elapsed="0.183804"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:08.163641" level="INFO">Typing text 'wrong_pass' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:36:07.704350" level="INFO">Typing text 'wrong_pass' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.163370" elapsed="0.081365"/>
+<status status="PASS" start="2025-02-21T11:36:07.704055" elapsed="0.063824"/>
 </kw>
 <arg>wrong_pass</arg>
-<status status="PASS" start="2025-02-19T11:42:08.162980" elapsed="0.081944"/>
+<status status="PASS" start="2025-02-21T11:36:07.703578" elapsed="0.064397"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:08.246038" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:36:07.768437" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.245784" elapsed="0.102845"/>
+<status status="PASS" start="2025-02-21T11:36:07.768307" elapsed="0.057249"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:08.245382" elapsed="0.103362"/>
+<status status="PASS" start="2025-02-21T11:36:07.768105" elapsed="0.057545"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:07.519291" elapsed="0.306405"/>
+</kw>
+<kw name="Then User Presented With Error Message" owner="keywords">
 <kw name="Verify Login Failed" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="login-message"]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.349306" elapsed="0.031765"/>
+<status status="PASS" start="2025-02-21T11:36:07.826319" elapsed="0.018960"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:08.409666" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
+<msg time="2025-02-21T11:36:07.856872" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
 <arg>xpath=//*[@id="login-message"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.381368" elapsed="0.028575"/>
+<status status="PASS" start="2025-02-21T11:36:07.845423" elapsed="0.011535"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:08.349039" elapsed="0.061081"/>
+<status status="PASS" start="2025-02-21T11:36:07.826162" elapsed="0.030878"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:07.825953" elapsed="0.031131"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:42:08.410685" elapsed="2.581764"/>
+<status status="PASS" start="2025-02-21T11:36:07.857359" elapsed="2.367988"/>
 </kw>
 <doc>Given User is on the login page
-When Usser enters an unregistered username and password And attempts to log in
+When User enters an unregistered username and password And attempts to log in
 Then User should see an error message indicating invalid credentials
- And should not be granted access to the account</doc>
+And should not be granted access to the account</doc>
 <tag>Kotaiba</tag>
-<status status="PASS" start="2025-02-19T11:42:05.969063" elapsed="5.023763"/>
+<tag>refaktorerat_Alma</tag>
+<tag>refaktorerat_Therese</tag>
+<status status="PASS" start="2025-02-21T11:36:05.818984" elapsed="4.406797"/>
 </test>
-<test id="s1-s3-t3" name="Register New Account Log In With Invalid Username" line="50">
+<test id="s1-s3-t3" name="Register New Account Log In With Invalid Username" line="42">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:10.996633" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:36:10.229583" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:42:10.996363" elapsed="1.905929"/>
+<status status="PASS" start="2025-02-21T11:36:10.229126" elapsed="1.497716"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:36:11.727222" elapsed="0.059225"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:42:10.995840" elapsed="1.907145"/>
+<status status="PASS" start="2025-02-21T11:36:10.228307" elapsed="1.558429"/>
 </kw>
+<kw name="Given User Try To Login In With Invalid Usernamne" owner="keywords">
+<kw name="Click Login Link" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:36:11.788522" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<arg>xpath=//*[@id='login-nav']/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:36:11.788294" elapsed="0.135047"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:11.788026" elapsed="0.135477"/>
+</kw>
+<kw name="Type In Username Login" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:36:11.924403" level="INFO">Typing text 'test123' into text field 'xpath=//*[@id='login-username']'.</msg>
+<arg>xpath=//*[@id='login-username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:36:11.924129" elapsed="0.165776"/>
+</kw>
+<arg>test123</arg>
+<status status="PASS" start="2025-02-21T11:36:11.923721" elapsed="0.166345"/>
+</kw>
+<kw name="Type In Password Login" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:36:12.091051" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
+<arg>xpath=//*[@id='login-password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:36:12.090644" elapsed="0.068063"/>
+</kw>
+<arg>test123456789</arg>
+<status status="PASS" start="2025-02-21T11:36:12.090269" elapsed="0.068587"/>
+</kw>
+<kw name="Submit Credentials" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-21T11:36:12.159340" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<arg>xpath=//*[@id='login-form']/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-21T11:36:12.159213" elapsed="0.057871"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:12.159005" elapsed="0.058294"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:11.787620" elapsed="0.429772"/>
+</kw>
+<kw name="When User Has Registered A New Account And Writes The Incorrect Username" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:12.904206" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:36:12.218902" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:12.903998" elapsed="0.089495"/>
+<status status="PASS" start="2025-02-21T11:36:12.218123" elapsed="0.055305"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:12.903644" elapsed="0.090107"/>
+<status status="PASS" start="2025-02-21T11:36:12.217947" elapsed="0.055602"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:12.994990" level="INFO">Typing text 'test' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:36:12.275166" level="INFO">Typing text 'test' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:12.994729" elapsed="0.124502"/>
+<status status="PASS" start="2025-02-21T11:36:12.274453" elapsed="0.103424"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-19T11:42:12.994323" elapsed="0.125256"/>
+<status status="PASS" start="2025-02-21T11:36:12.273722" elapsed="0.104316"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.121415" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:36:12.378956" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.120760" elapsed="0.102514"/>
+<status status="PASS" start="2025-02-21T11:36:12.378704" elapsed="0.127474"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:42:13.120155" elapsed="0.103377"/>
+<status status="PASS" start="2025-02-21T11:36:12.378320" elapsed="0.128037"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.225246" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:36:12.507653" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.224845" elapsed="0.068315"/>
+<status status="PASS" start="2025-02-21T11:36:12.506958" elapsed="0.086479"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:13.224212" elapsed="0.069219"/>
+<status status="PASS" start="2025-02-21T11:36:12.506626" elapsed="0.087037"/>
 </kw>
-<kw name="Click Login Link" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.295678" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
-<arg>xpath=//*[@id='login-nav']/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.294953" elapsed="0.095274"/>
+<status status="PASS" start="2025-02-21T11:36:12.217713" elapsed="0.376085"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:13.294212" elapsed="0.096301"/>
-</kw>
-<kw name="Type In Username Login" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.392827" level="INFO">Typing text 'test123' into text field 'xpath=//*[@id='login-username']'.</msg>
-<arg>xpath=//*[@id='login-username']</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.392170" elapsed="0.152329"/>
-</kw>
-<arg>test123</arg>
-<status status="PASS" start="2025-02-19T11:42:13.391326" elapsed="0.153466"/>
-</kw>
-<kw name="Type In Password Login" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.547457" level="INFO">Typing text 'test123456789' into text field 'xpath=//*[@id='login-password']'.</msg>
-<arg>xpath=//*[@id='login-password']</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.546754" elapsed="0.194203"/>
-</kw>
-<arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:42:13.545701" elapsed="0.195600"/>
-</kw>
-<kw name="Submit Credentials" owner="keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.742528" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
-<arg>xpath=//*[@id='login-form']/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.742285" elapsed="0.097012"/>
-</kw>
-<status status="PASS" start="2025-02-19T11:42:13.741849" elapsed="0.097598"/>
-</kw>
+<kw name="Then User Should Be Presented With A Message That They Need To Write The Correct Username" owner="keywords">
 <kw name="Verify Login Failed" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="login-message"]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.841518" elapsed="0.023374"/>
+<status status="PASS" start="2025-02-21T11:36:12.594961" elapsed="2.164709"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:13.883969" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
+<msg time="2025-02-21T11:36:14.769276" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
 <arg>xpath=//*[@id="login-message"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.865229" elapsed="0.018858"/>
+<status status="PASS" start="2025-02-21T11:36:14.759947" elapsed="0.009470"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:13.840517" elapsed="0.043686"/>
+<status status="PASS" start="2025-02-21T11:36:12.594657" elapsed="2.174903"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:12.594272" elapsed="2.175368"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:42:13.885322" elapsed="2.642689"/>
+<status status="PASS" start="2025-02-21T11:36:14.770163" elapsed="2.456318"/>
 </kw>
-<doc>Given that the user is on the webpage
+<doc>Given that the user trying register
 When the user has registered a new account
 And writes the incorrect username
 Then the user should be presented with a message that they need to write the correct username</doc>
+<tag>refaktorerat_Alma</tag>
 <tag>Theres &amp; Kotaiba</tag>
-<status status="PASS" start="2025-02-19T11:42:10.994255" elapsed="5.534557"/>
+<status status="PASS" start="2025-02-21T11:36:10.227207" elapsed="6.999594"/>
 </test>
-<test id="s1-s3-t4" name=" New Account Log In With Invalid Password" line="67">
+<test id="s1-s3-t4" name=" New Account Log In With Invalid Password" line="54">
 <kw name="Open Browser To Home Page" owner="keywords" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:16.534956" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
+<msg time="2025-02-21T11:36:17.230293" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/almab/OneDrive/Dokument/CT%20Jurasstina-kalle%20park/grupp-3---JKP/webpage-jurap/jurap.html'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T11:42:16.534207" elapsed="1.976144"/>
+<status status="PASS" start="2025-02-21T11:36:17.230115" elapsed="1.497413"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-21T11:36:18.727832" elapsed="0.123885"/>
 </kw>
 <arg>${url}</arg>
 <arg>${browser}</arg>
-<status status="PASS" start="2025-02-19T11:42:16.532653" elapsed="1.978528"/>
+<status status="PASS" start="2025-02-21T11:36:17.229782" elapsed="1.622092"/>
 </kw>
+<kw name="Given User Has Registered A New Account And Writes The Incorrect Password" owner="keywords">
 <kw name="Click Register Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:18.513539" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
+<msg time="2025-02-21T11:36:18.853978" level="INFO">Clicking element '//*[@id="register-nav"]/a'.</msg>
 <arg>//*[@id="register-nav"]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:18.513161" elapsed="0.165271"/>
+<status status="PASS" start="2025-02-21T11:36:18.853241" elapsed="0.145750"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:18.512275" elapsed="0.166481"/>
+<status status="PASS" start="2025-02-21T11:36:18.852985" elapsed="0.146242"/>
 </kw>
 <kw name=" Type In Username Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:18.680024" level="INFO">Typing text 'test123' into text field '//*[@id="reg-username"]'.</msg>
+<msg time="2025-02-21T11:36:19.000025" level="INFO">Typing text 'test123' into text field '//*[@id="reg-username"]'.</msg>
 <arg>//*[@id="reg-username"]</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:18.679704" elapsed="0.126038"/>
+<status status="PASS" start="2025-02-21T11:36:18.999779" elapsed="0.101225"/>
 </kw>
 <arg>test123</arg>
-<status status="PASS" start="2025-02-19T11:42:18.679312" elapsed="0.126634"/>
+<status status="PASS" start="2025-02-21T11:36:18.999429" elapsed="0.101736"/>
 </kw>
 <kw name="Type In Password Register" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:18.808553" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
+<msg time="2025-02-21T11:36:19.102179" level="INFO">Typing text 'test123456789' into text field '//*[@id="reg-password"]'.</msg>
 <arg>//*[@id="reg-password"]</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:18.807846" elapsed="0.105343"/>
+<status status="PASS" start="2025-02-21T11:36:19.101826" elapsed="0.132858"/>
 </kw>
 <arg>test123456789</arg>
-<status status="PASS" start="2025-02-19T11:42:18.806840" elapsed="0.106834"/>
+<status status="PASS" start="2025-02-21T11:36:19.101378" elapsed="0.133401"/>
 </kw>
 <kw name="Sumbit Register Button" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:18.916148" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
+<msg time="2025-02-21T11:36:19.236649" level="INFO">Clicking element '//*[@id="register-form"]/button'.</msg>
 <arg>//*[@id="register-form"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:18.915506" elapsed="0.079658"/>
+<status status="PASS" start="2025-02-21T11:36:19.236020" elapsed="0.064866"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:18.914548" elapsed="0.081079"/>
+<status status="PASS" start="2025-02-21T11:36:19.234964" elapsed="0.066060"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:18.852632" elapsed="0.448459"/>
+</kw>
+<kw name="When User Try To Login In With Invalid Password" owner="keywords">
 <kw name="Click Login Link" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:18.997734" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
+<msg time="2025-02-21T11:36:19.304251" level="INFO">Clicking element 'xpath=//*[@id='login-nav']/a'.</msg>
 <arg>xpath=//*[@id='login-nav']/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:18.997298" elapsed="0.097054"/>
+<status status="PASS" start="2025-02-21T11:36:19.303886" elapsed="0.078901"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:18.996568" elapsed="0.098070"/>
+<status status="PASS" start="2025-02-21T11:36:19.302183" elapsed="0.080881"/>
 </kw>
 <kw name="Type In Username Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:19.096799" level="INFO">Typing text 'test123' into text field 'xpath=//*[@id='login-username']'.</msg>
+<msg time="2025-02-21T11:36:19.384051" level="INFO">Typing text 'test123' into text field 'xpath=//*[@id='login-username']'.</msg>
 <arg>xpath=//*[@id='login-username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.096062" elapsed="0.154602"/>
+<status status="PASS" start="2025-02-21T11:36:19.383826" elapsed="0.089918"/>
 </kw>
 <arg>test123</arg>
-<status status="PASS" start="2025-02-19T11:42:19.095321" elapsed="0.155761"/>
+<status status="PASS" start="2025-02-21T11:36:19.383490" elapsed="0.090360"/>
 </kw>
 <kw name="Type In Password Login" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:19.254246" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-password']'.</msg>
+<msg time="2025-02-21T11:36:19.474430" level="INFO">Typing text 'test' into text field 'xpath=//*[@id='login-password']'.</msg>
 <arg>xpath=//*[@id='login-password']</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.253594" elapsed="0.123688"/>
+<status status="PASS" start="2025-02-21T11:36:19.474278" elapsed="0.072612"/>
 </kw>
 <arg>test</arg>
-<status status="PASS" start="2025-02-19T11:42:19.252441" elapsed="0.125234"/>
+<status status="PASS" start="2025-02-21T11:36:19.474030" elapsed="0.072999"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:19.378864" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
+<msg time="2025-02-21T11:36:19.547808" level="INFO">Clicking button 'xpath=//*[@id='login-form']/button'.</msg>
 <arg>xpath=//*[@id='login-form']/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.378611" elapsed="0.099003"/>
+<status status="PASS" start="2025-02-21T11:36:19.547603" elapsed="0.136225"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:19.378244" elapsed="0.100219"/>
+<status status="PASS" start="2025-02-21T11:36:19.547259" elapsed="0.136718"/>
 </kw>
+<status status="PASS" start="2025-02-21T11:36:19.301428" elapsed="0.382611"/>
+</kw>
+<kw name="Then User Should See An Error Message Indicating Invalid Credentials" owner="keywords">
 <kw name="Verify Login Failed" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="login-message"]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.480667" elapsed="0.028173"/>
+<status status="PASS" start="2025-02-21T11:36:19.689634" elapsed="0.040389"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-02-19T11:42:19.531649" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
+<msg time="2025-02-21T11:36:19.756515" level="INFO">Element 'xpath=//*[@id="login-message"]' is displayed.</msg>
 <arg>xpath=//*[@id="login-message"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.509066" elapsed="0.022795"/>
+<status status="PASS" start="2025-02-21T11:36:19.730278" elapsed="0.026367"/>
 </kw>
-<status status="PASS" start="2025-02-19T11:42:19.480006" elapsed="0.052099"/>
+<status status="PASS" start="2025-02-21T11:36:19.685027" elapsed="0.071837"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:36:19.684560" elapsed="0.072450"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-19T11:42:19.532944" elapsed="2.882066"/>
+<status status="PASS" start="2025-02-21T11:36:19.758439" elapsed="2.379476"/>
 </kw>
 <doc>Given User is on the login page
 When User enters an Invalid Password And attempts to log in
-Then User should see an error message indicating invalid credentials
-And should not be granted access to the account</doc>
+Then User should see an error message indicating invalid credentials</doc>
+<tag>refaktorerat_Alma</tag>
 <tag>Therese &amp; Kotaiba</tag>
-<status status="PASS" start="2025-02-19T11:42:16.530613" elapsed="5.884999"/>
+<status status="PASS" start="2025-02-21T11:36:17.228252" elapsed="4.910081"/>
 </test>
 <doc>Test for Register and Login function for both valid and invalid scenarios that apply for both personas.</doc>
-<status status="PASS" start="2025-02-19T11:42:00.746797" elapsed="21.670818"/>
+<status status="PASS" start="2025-02-21T11:36:01.012476" elapsed="21.127095"/>
 </suite>
-<status status="PASS" start="2025-02-19T11:41:06.382566" elapsed="76.038616"/>
+<status status="PASS" start="2025-02-21T11:34:59.229934" elapsed="82.911021"/>
 </suite>
 <statistics>
 <total>
@@ -1348,10 +1622,9 @@ And should not be granted access to the account</doc>
 <stat pass="1" fail="0" skip="0">Alma &amp; Therese</stat>
 <stat pass="1" fail="0" skip="0">Kotaiba</stat>
 <stat pass="1" fail="0" skip="0">Kotaiba, refaktorerat_ Alma</stat>
-<stat pass="1" fail="0" skip="0">refaktorerat_Alma</stat>
-<stat pass="1" fail="0" skip="0">refaktorera_Therese</stat>
-<stat pass="2" fail="0" skip="0">refaktorerat_ Kotaiba</stat>
-<stat pass="2" fail="0" skip="0">refaktorerat_Therese</stat>
+<stat pass="5" fail="0" skip="0">refaktorerat_Alma</stat>
+<stat pass="3" fail="0" skip="0">refaktorerat_ Kotaiba</stat>
+<stat pass="4" fail="0" skip="0">refaktorerat_Therese</stat>
 <stat pass="1" fail="0" skip="0">Theres &amp; Kotaiba</stat>
 <stat pass="1" fail="0" skip="0">Therese</stat>
 <stat pass="1" fail="0" skip="0">Therese &amp; Alma, refaktorerat_ Alma</stat>
