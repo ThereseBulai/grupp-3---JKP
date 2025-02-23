@@ -4,7 +4,99 @@ Library    SeleniumLibrary
 *** Keywords ***
 Open Browser To Home Page
     [Arguments]    ${url}    ${browser}    
-    Open Browser    ${url}    ${browser}    
+    Open Browser    ${url}    ${browser}  
+
+
+ #New Keywords for Given/When/Then
+User Is Logged In
+    Click Register Link
+    Type In Username Register    Monikaplöjer
+    Type In Password Register    slåavmighatten    
+    Sumbit Register Button
+
+    Click Login Link
+    Type In Username Login   Monikaplöjer
+    Type In Password Login   slåavmighatten    
+    Submit Credentials
+    Sleep    5
+
+User Try To Book Safari Tour Before Buying A Ticket To The Park
+    Click Book Safaris Link
+    Click Select Safari Date    002025-03-02
+    Select Safari Type Herbivore
+    Click Add To Cart Safari
+
+User Should Be Presented With Error Message That They Need To Buy Ticket
+       Verify Error Of Booking Safari
+
+
+User Try To Book Safari Tour On The Weekend With A Regular Ticket
+    Click Buy Tickets Link
+    Click Ticket Category
+    Choose Regular Ticket
+    Click Quantity Link    1
+    Click Add To Cart
+    Handle Alert
+
+
+User Should Be Presented With Error Message That They Need A Vip Ticket
+    Click Book Safaris Link
+    Click Select Safari Date    002025-03-22
+    Select Safari Type Herbivore
+    Click Add To Cart Safari
+    Verify Error Of Booking Safari
+    Sleep    5
+
+
+User is On The Page To Register
+    Click Register Link
+
+User Try To Register New Account And Type in A Password Shorter Than Eight
+     Type In Username Register     minstamöjliga
+    Type In Password Register    123    
+    Sumbit Register Button
+
+
+User Try To Register New Account And Type in A Password Longer Than Eight
+    Type In Username Register     maxa
+    Type In Password Register    qwertyuiopåasdfghjklöäzxcvbnmqwrtyuiopqwwertyuiopåasdfghjklöäzvxnvmbnjskdgskgsghsklslhssjdgksjdghksdhjgksjhdgkshgkjshgkshdgjhdsgkhdsgkjshdgkhsdgkhsdgkjhsdgkhsdgkhsdgajfgakjdghkjsdhgksjhgksjghkjsdhgksjhgsghskghskhskfjhjfghkgjhskfjhfkhjhdfkhfdkjghdfkjghdkfgdhfkghdkfgjhdkfghdkfghdkgjh   
+    Sumbit Register Button
+
+
+User Should Be Presented With an Error Message
+   Verify Error Of Register
+    Sleep    5
+
+User Should Be Presented With Message That Registration Was Successful
+        Verify Successful Registration
+        Sleep    5    
+
+
+User Try To Register New Account And Type in A Password With Different Characters
+    Type In Username Register     pajasidan
+    Type In Password Register    ~! @#$%^&*_-+=`|:;"'<>,.?/¬¦!hejสวัสดีこんにちは
+    Sumbit Register Button
+
+User Is On Buy Tickets On The Website
+    Click Buy Tickets Link
+
+User Try To Buy Ticket Without Being Logged In
+    Click Ticket Type
+    Choose Senior
+    Click Ticket Category
+    Choose Regular Ticket
+    Click Quantity Link    1
+    Click Add To Cart
+
+
+User Should Be Presented With An Error Message That They Need To Be Logged In
+    Sleep    5
+    Handle Alert
+
+
+
+
+     
     
 #Login keywords
 Click Login Link
@@ -135,88 +227,3 @@ Verify Successful Registration
 
 
 
-#New Keywords for Given/When/Then
-User Is Logged In
-    Click Register Link
-    Type In Username Register    Monikaplöjer
-    Type In Password Register    slåavmighatten    
-    Sumbit Register Button
-
-    Click Login Link
-    Type In Username Login   Monikaplöjer
-    Type In Password Login   slåavmighatten    
-    Submit Credentials
-    Sleep    5
-
-User Try To Book Safari Tour Before Buying A Ticket To The Park
-    Click Book Safaris Link
-    Click Select Safari Date    002025-03-02
-    Select Safari Type Herbivore
-    Click Add To Cart Safari
-
-User Should Be Presented With Error Message That They Need To Buy Ticket
-       Verify Error Of Booking Safari
-
-
-User Try To Book Safari Tour On The Weekend With A Regular Ticket
-    Click Buy Tickets Link
-    Click Ticket Category
-    Choose Regular Ticket
-    Click Quantity Link    1
-    Click Add To Cart
-    Handle Alert
-
-
-User Should Be Presented With Error Message That They Need A Vip Ticket
-    Click Book Safaris Link
-    Click Select Safari Date    002025-03-22
-    Select Safari Type Herbivore
-    Click Add To Cart Safari
-    Verify Error Of Booking Safari
-    Sleep    5
-
-
-User is On The Page To Register
-    Click Register Link
-
-User Try To Register New Account And Type in A Password Shorter Than Eight
-     Type In Username Register     minstamöjliga
-    Type In Password Register    123    
-    Sumbit Register Button
-
-
-User Try To Register New Account And Type in A Password Longer Than Eight
-    Type In Username Register     maxa
-    Type In Password Register    qwertyuiopåasdfghjklöäzxcvbnmqwrtyuiopqwwertyuiopåasdfghjklöäzvxnvmbnjskdgskgsghsklslhssjdgksjdghksdhjgksjhdgkshgkjshgkshdgjhdsgkhdsgkjshdgkhsdgkhsdgkjhsdgkhsdgkhsdgajfgakjdghkjsdhgksjhgksjghkjsdhgksjhgsghskghskhskfjhjfghkgjhskfjhfkhjhdfkhfdkjghdfkjghdkfgdhfkghdkfgjhdkfghdkfghdkgjh   
-    Sumbit Register Button
-
-
-User Should Be Presented With an Error Message
-   Verify Error Of Register
-    Sleep    5
-
-User Should Be Presented With Message That Registration Was Successful
-        Verify Successful Registration
-        Sleep    5    
-
-
-User Try To Register New Account And Type in A Password With Different Characters
-    Type In Username Register     pajasidan
-    Type In Password Register    ~! @#$%^&*_-+=`|:;"'<>,.?/¬¦!hejสวัสดีこんにちは
-    Sumbit Register Button
-
-User Is On Buy Tickets On The Website
-    Click Buy Tickets Link
-
-User Try To Buy Ticket Without Being Logged In
-    Click Ticket Type
-    Choose Senior
-    Click Ticket Category
-    Choose Regular Ticket
-    Click Quantity Link    1
-    Click Add To Cart
-
-
-User Should Be Presented With An Error Message That They Need To Be Logged In
-    Sleep    5
-    Handle Alert
