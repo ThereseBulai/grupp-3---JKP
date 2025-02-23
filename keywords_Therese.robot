@@ -167,7 +167,7 @@ User Try To Book Safari Tour On The Weekend With A Regular Ticket
     Handle Alert
 
 
-User Should Be Presented with Error Message That They Need A Vip Ticket
+User Should Be Presented With Error Message That They Need A Vip Ticket
     Click Book Safaris Link
     Click Select Safari Date    002025-03-22
     Select Safari Type Herbivore
@@ -195,7 +195,7 @@ User Should Be Presented With an Error Message
    Verify Error Of Register
     Sleep    5
 
-User Should Be Presented With Message That It Was Successful
+User Should Be Presented With Message That Registration Was Successful
         Verify Successful Registration
         Sleep    5    
 
@@ -208,7 +208,7 @@ User Try To Register New Account And Type in A Password With Different Character
 User Is On Buy Tickets On The Website
     Click Buy Tickets Link
 
-User Try To Buy Ticker Without Being Logged In
+User Try To Buy Ticket Without Being Logged In
     Click Ticket Type
     Choose Senior
     Click Ticket Category

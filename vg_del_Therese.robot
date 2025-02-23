@@ -9,9 +9,9 @@ Variables    variables.py
 Test Setup    Open Browser To Home Page   ${url}    ${browser}
 Test Teardown    Close Browser   
 
-Documentation    The first 2 test are designed to test the booking of Safari Tour..
-        ...      The next 3 are testing the minimum and maximum limit of characters and what characters that are allowed in the password when user register new account.
-        ...      The last one is just a extra testcase to test to book a ticket without being logged in.
+Documentation    The first 2 test are designed to test the booking of Safari Tour.
+        ...      The next 3 are testing the registration function. To test the minimum and maximum limit of characters and what characters that are allowed in the password when user register new account.
+        ...      The last one is just a extra testcase to book a ticket without being logged in.
 
 
 
@@ -43,7 +43,7 @@ Try To Book Safari Tour On Weekend With Regular Ticket
 
     Given User Is Logged In
     When User Try To Book Safari Tour On The Weekend With A Regular Ticket
-    Then User Should Be Presented with Error Message That They Need A Vip Ticket
+    Then User Should Be Presented With Error Message That They Need A Vip Ticket
 
 
 
@@ -77,7 +77,7 @@ Try To Register New Account - What Is the Maximim Limit Of Characters
 
     Given User is On The Page To Register
     When User Try To Register New Account And Type in A Password Longer Than Eight
-    Then User Should Be Presented With Message That It Was Successful
+    Then User Should Be Presented With Message That Registration Was Successful
 
 
 
@@ -93,7 +93,8 @@ Try To Register New Account - What Characters are allowed
 
     Given User is On The Page To Register
     When User Try To Register New Account And Type in A Password With Different Characters
-    Then User Should Be Presented With Message That It Was Successful
+    Then User Should Be Presented With Message That Registration Was Successful
+
 
 
 
@@ -107,6 +108,7 @@ Try To Book A Ticket Without Being Logged In
     [Documentation]    Given that the user is on the website, 
     ...                When the user try to buy a ticket without being logged in, 
     ...                Then they should be presented with a message that they need to be logged in
+    
     Given User Is On Buy Tickets On The Website
-    When User Try To Buy Ticker Without Being Logged In
+    When User Try To Buy Ticket Without Being Logged In
     Then User Should Be Presented With An Error Message That They Need To Be Logged In
