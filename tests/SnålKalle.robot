@@ -4,9 +4,11 @@
 Library    SeleniumLibrary
 Library    String
 Library    Collections
-Resource    keywords.robot
-Variables    variables.py
-Test Setup        Open Browser To Home Page    ${url}    ${browser}     
+Resource    ../resources/keywords_files/keywords.robot
+Resource    ../resources/keywords_files/keywords_Snålakalle.robot
+Variables    ../resources/variables_files/variables.py
+
+Test Setup    Open Browser To Home Page    ${url}    ${browser}     
 Test Teardown    Close Browser
 Documentation     This file includes test for the persona Snåla-Kalle
 

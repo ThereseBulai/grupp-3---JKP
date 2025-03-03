@@ -4,8 +4,8 @@
 Library    SeleniumLibrary
 Library    String
 Library    Collections
-Resource    keywords.robot
-Variables    variables.py
+Resource    ../resources/keywords_files/keywords.robot
+Variables    ../resources/variables_files/variables.py
 Test Setup        Open Browser To Home Page    ${url}    ${browser}     
 Test Teardown    Close Browser
 Documentation     Test for Register and Login function for both valid and invalid scenarios that apply for both personas. 
