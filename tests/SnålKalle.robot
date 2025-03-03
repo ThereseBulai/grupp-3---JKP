@@ -15,7 +15,7 @@ Documentation     This file includes test for the persona Snåla-Kalle
 *** Test Cases ***
 
 Check Price For Entrace Ticket For A New User
-    [Tags]    Therese    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+    [Tags]    new-feature    Therese    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
     [Documentation]    Given that Snåla-Kalle has registerd a new account, is logged in and is on the booking page
                 ...    When Snåla-Kalle selects 1 Adult ticket and proceed to checkout
                 ...    Then Snåla-Kalle see that they don't get a discount
