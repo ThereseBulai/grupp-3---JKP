@@ -43,6 +43,10 @@ Click Register Link
 
 Sumbit Register Button
     Click Element    //*[@id="register-form"]/button
+    
+Click Quantity Link
+    [Arguments]    ${numberOfTickets}  
+    Input Text    //*[@id="ticket-quantity"]    ${numberOfTickets}
 
 
 
@@ -53,21 +57,10 @@ Click Buy Tickets Link
 Click Ticket Category
     Click Element    //*[@id="ticket-category"]
     
-Choose VIP Ticket
-      Click Element    //*[@id="ticket-category"]/option[2]
-
-Click Quantity Link
-    [Arguments]    ${numberOfTickets}  
-    Input Text    //*[@id="ticket-quantity"]    ${numberOfTickets}
 
 Click Add To Cart
     Click Element    //*[@id="ticket-form"]/button
 
-Click Ticket Type
-    Click Element    //*[@id="ticket-type"]
-    
-Choose Child
-    Click Element    //*[@id="ticket-type"]/option[2]
 
 Choose Regular Ticket
     Click Element   //*[@id="ticket-category"]/option[1] 
@@ -80,39 +73,6 @@ Click Proceed To Checkout
     Click Element    //*[@id="checkout-button"]
     Handle Alert
   
-
-#Book Safari Keywords
-Click Book Safaris Link
-    Click Element    //*[@id="safari-nav"]
-
-Click Select Safari Date
-    [Arguments]    ${chooseDate}
-    Input Text   //*[@id="safari-date"]    ${chooseDate} 
-
-
-
-#Keywords for different safari types
-Select Safari Type T-rex Rubmle 
-    Click Element    //*[@id="safari-type"]/option[2]
-
-Select Safari Type Herbivore 
-    Click Element    //*[@id="safari-type"]/option[1] 
-
-Select Safari Type Extreme Thrill Pack
-    Click Element   //*[@id="safari-type"]/option[4]  
-
-Select Safari Type Herbivore With Feeding
-    Click Element    //*[@id="safari-type"]/option[3] 
-    
-Click Add To Cart Safari
-    Click Element    //*[@id="safari-form"]/button
-    
-
-
-Book Safari failed 
-   Wait Until Element Contains    xpath=//*[@id="safari-message"]  10s
-
-
 
 #Keywords for removing objects in cart
 Click Remove Ticket
@@ -136,22 +96,7 @@ User Is logged In On The Website
     Submit Credentials
     Sleep    2
 
-User Adds Two Adult Vip Tickets
-    Click Buy Tickets Link
-    Click Ticket Category
-    Choose VIP Ticket
-    Click Quantity Link    2
-    Click Add To Cart
-    Handle Alert
 
-User Adds Two Child Vip Tickets
-    Click Ticket Type
-    Choose Child
-    Click Ticket Category
-    Choose VIP Ticket
-    Click Quantity Link    2
-    Click Add To Cart
-    Handle Alert
    
 
 User Proceeds To Checkout
@@ -159,35 +104,6 @@ User Proceeds To Checkout
     Click Proceed To Checkout
     Sleep    5
  
-
-User Has Bought Vip Tickets
-    User Adds Two Adult Vip Tickets
-    User Adds Two Child Vip Tickets
-  
-
-User Can Book Safari Tours
-    Click Book Safaris Link    
-    Click Select Safari Date    002025-02-22
-    Select Safari Type Extreme Thrill Pack
-    Sleep    5
-    Click Add To Cart Safari
-    Handle Alert
-    
-    Click Select Safari Date    002025-02-22
-    Select Safari Type Herbivore With Feeding
-    Click Add To Cart Safari
-    Handle Alert
-    User Proceeds To Checkout
- 
-
-User Can Not Book A Safari With A Passed Date
-   Click Book Safaris Link 
-   Click Select Safari Date   002025-01-01  #Date has already passed
-   Select Safari Type T-rex Rubmle
-   Sleep   5
-   Click Add To Cart Safari
-   Sleep    5
-
 
 User Register New Account Valid Login
     Click Register Link
@@ -255,31 +171,3 @@ User Should See An Error Message Indicating Invalid Credentials
     Verify Login Failed
 
 
-User Snåla-Kalle Register And Log In Under Fake Name
-    Click Register Link
-    Type In Username Register     StålaNalle
-    Type In Password Register    gemigrabattnu    
-    Sumbit Register Button
-
-    Click Login Link
-    Type In Username Login   StålaNalle
-    Type In Password Login   gemigrabattnu    
-    Submit Credentials
-    Sleep    2
-
-
-
-The User Snåla-Kalle Selects One Adult Ticket And Proceed To Checkout
-    Click Buy Tickets Link
-    Click Ticket Category
-    Choose Regular Ticket
-    Click Quantity Link    1
-    Click Add To Cart
-    Handle Alert
-
-Snåla-Kalle Can Not Add Discount And Removes Ticket From The Cart 
-    Click Cart Link
-    Click Remove Ticket
-    Sleep    5
-
-    
