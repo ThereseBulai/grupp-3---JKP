@@ -1,12 +1,15 @@
 #Alma, Therese & Kotaiba, Grupp 3
 *** Settings ***
 Library    SeleniumLibrary
+Variables    ${EXECDIR}/resources/variables_files/variables.py
+
+*** Variables ***
+${html_path}    file:///${EXECDIR}/webpage-jurap/jurap.html
 
 
 *** Keywords ***
 Open Browser To Home Page
-    [Arguments]    ${url}    ${browser}    
-    Open Browser    ${url}    ${browser}
+    Open Browser     ${html_path}    ${browser}   
     Maximize Browser Window    
     
 #Login keywords

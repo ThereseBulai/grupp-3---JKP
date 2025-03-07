@@ -4,11 +4,10 @@
 Library    SeleniumLibrary
 Library    String
 Library    Collections
-Resource    ../resources/keywords_files/keywords.robot
-Resource    ../resources/keywords_files/keywords_Snålakalle.robot
-Variables    ../resources/variables_files/variables.py
+Resource     ${EXECDIR}/resources/keywords_files/keywords.robot
+Resource     ${EXECDIR}/resources/keywords_files/keywords_Snålakalle.robot
 
-Test Setup    Open Browser To Home Page    ${url}    ${browser}     
+Test Setup    Open Browser To Home Page  
 Test Teardown    Close Browser
 Documentation     This file includes test for the persona Snåla-Kalle
 
