@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    keywords.robot
+Resource    ${EXECDIR}/resources/keywords_files/keywords.robot
 
 *** Keywords ***
 Choose VIP Ticket
