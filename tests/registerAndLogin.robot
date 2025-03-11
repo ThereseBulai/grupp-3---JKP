@@ -14,7 +14,7 @@ Documentation     Test for Register and Login function for both valid and invali
 *** Test Cases ***
 
 Register New Account Valid Login 
-    [Tags]   new-feature    Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+    [Tags]       Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
     [Documentation]     Given User is on the registration page
     ...                 When User enters a valid username and password
     ...                 And submits the registration form
@@ -27,7 +27,7 @@ Register New Account Valid Login
 
 
 No Registration Of New Account Log in Invalid  
-   [Tags]   new-feature    Kotaiba    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+   [Tags]       Kotaiba    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
    [Documentation]     Given User is on the login page 
    ...                 When User enters an unregistered username and password And attempts to log in 
    ...                 Then User should see an error message indicating invalid credentials
@@ -39,7 +39,7 @@ No Registration Of New Account Log in Invalid
 
 
 Register New Account Log In With Invalid Username
-    [Tags]    new-feature    Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+    [Tags]        Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
     [Documentation]    Given that the user trying register 
     ...                When the user has registered a new account
     ...                And writes the incorrect username
@@ -51,7 +51,7 @@ Register New Account Log In With Invalid Username
 
 
  New Account Log In With Invalid Password
-    [Tags]    new-feature    Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
+    [Tags]        Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
     [Documentation]    Given User is on the login page 
    ...                 When User enters an Invalid Password And attempts to log in 
    ...                 Then User should see an error message indicating invalid credentials
