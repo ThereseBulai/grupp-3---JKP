@@ -41,7 +41,9 @@ No Registration Of New Account Log in Invalid
 
 
 Register New Account Log In With Invalid Username
-    [Tags]        Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+
+    [Tags]       Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+
     [Documentation]    Given that the user trying register 
     ...                When the user has registered a new account
     ...                And writes the incorrect username
@@ -54,7 +56,7 @@ Register New Account Log In With Invalid Username
 
  New Account Log In With Invalid Password
 
-    [Tags]       Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
+    [Tags]      Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
 
     [Documentation]    Given User is on the login page 
    ...                 When User enters an Invalid Password And attempts to log in 

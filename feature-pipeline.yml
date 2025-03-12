@@ -2,6 +2,7 @@
 trigger:
   - feature/*
 
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -27,3 +28,5 @@ steps:
       targetPath: '$(System.DefaultWorkingDirectory)/results/logs/'
       artifactName: 'robot-reports-feature'
     displayName: 'Publish Robot Framework Reports'
+
+
