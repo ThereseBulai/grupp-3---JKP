@@ -14,7 +14,7 @@ Documentation     Test for Register and Login function for both valid and invali
 *** Test Cases ***
 
 Register New Account Valid Login 
-    [Tags]       Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+    [Tags]    new-feature       Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
 
     [Documentation]     Given User is on the registration page
     ...                 When User enters a valid username and password
