@@ -1,3 +1,4 @@
+
 trigger: 
   - develop
 
@@ -23,5 +24,4 @@ steps:
       targetPath: '$(System.DefaultWorkingDirectory)/results/logs/'
       artifactName: 'robot-reports-develop'
     displayName: 'Publish Robot Framework Reports'
-
 
