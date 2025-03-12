@@ -15,6 +15,7 @@ Documentation     Test for Register and Login function for both valid and invali
 
 Register New Account Valid Login 
     [Tags]       Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+
     [Documentation]     Given User is on the registration page
     ...                 When User enters a valid username and password
     ...                 And submits the registration form
@@ -28,6 +29,7 @@ Register New Account Valid Login
 
 No Registration Of New Account Log in Invalid  
    [Tags]      Kotaiba    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+
    [Documentation]     Given User is on the login page 
    ...                 When User enters an unregistered username and password And attempts to log in 
    ...                 Then User should see an error message indicating invalid credentials
@@ -51,7 +53,9 @@ Register New Account Log In With Invalid Username
 
 
  New Account Log In With Invalid Password
+
     [Tags]       Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
+
     [Documentation]    Given User is on the login page 
    ...                 When User enters an Invalid Password And attempts to log in 
    ...                 Then User should see an error message indicating invalid credentials
