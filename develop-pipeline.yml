@@ -1,6 +1,6 @@
 
 trigger: 
-  - develop
+ - develop
 
 
 pool:
