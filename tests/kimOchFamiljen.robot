@@ -15,7 +15,6 @@ Documentation     Test designed for the persona Kim and his family.
 
 Buying Entrance Ticket For Two Adults And Two Children
     [Tags]       Alma & Therese    refaktorerat_Alma    refaktorerat_Therese
-
     [Documentation]    Given that Kim is on the website for juraStina-Kalle, 
     ...                When he is booking 2 VIP-tickets for 2 adults and 2 VIP-tickets for 2 children, 
     ...                Then he should be able to proceed to checkout and pay for his tickets. 
@@ -27,7 +26,7 @@ Buying Entrance Ticket For Two Adults And Two Children
     
 
 Book Safari Tour On The Weekend
-    [Tags]        Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
+    [Tags]       Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
 
     [Documentation]    Given that Kim has registered an account and booked VIP-entrance tickets, 
     ...                When he choose safari-dates, 
@@ -40,8 +39,7 @@ Book Safari Tour On The Weekend
 
 Book Safari Tour With Date That Has Passed
 
-   [Tags]    new-feature     Kotaiba, refaktorerat_ Alma    refaktorerat_ Therese    refaktorerat_ Kotaiba
-
+   [Tags]     Kotaiba, refaktorerat_ Alma    refaktorerat_ Therese    refaktorerat_ Kotaiba
    [Documentation]   Given that Kim is trying to book a date for his safari tour, 
    ...               When he is trying to book a date that has already passed, 
    ...               Then he should get an error message.
