@@ -14,7 +14,6 @@ Documentation     Test for Register and Login function for both valid and invali
 *** Test Cases ***
 
 Register New Account Valid Login 
-
     [Tags]       Alma    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
 
     [Documentation]     Given User is on the registration page
@@ -29,8 +28,7 @@ Register New Account Valid Login
 
 
 No Registration Of New Account Log in Invalid  
-
-   [Tags]       Kotaiba    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
+   [Tags]      Kotaiba    refaktorerat_Therese    refaktorerat_Alma    refaktorerat_Kotaiba
 
    [Documentation]     Given User is on the login page 
    ...                 When User enters an unregistered username and password And attempts to log in 
@@ -56,7 +54,7 @@ Register New Account Log In With Invalid Username
 
  New Account Log In With Invalid Password
 
-    [Tags]        Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
+    [Tags]       Therese & Kotaiba    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese    
 
     [Documentation]    Given User is on the login page 
    ...                 When User enters an Invalid Password And attempts to log in 
