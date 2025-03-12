@@ -4,16 +4,18 @@
 Library    SeleniumLibrary
 Library    String
 Library    Collections
-Resource    keywords.robot
-Variables    variables.py
-Test Setup        Open Browser To Home Page    ${url}    ${browser}     
+Resource     ${EXECDIR}/resources/keywords_files/keywords.robot
+Resource     ${EXECDIR}/resources/keywords_files/keywords_Snålakalle.robot
+
+Test Setup    Open Browser To Home Page  
 Test Teardown    Close Browser
 Documentation     This file includes test for the persona Snåla-Kalle
 
 *** Test Cases ***
 
 Check Price For Entrace Ticket For A New User
-    [Tags]    Therese    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+    [Tags]      Therese    refaktorerat_Alma    refaktorerat_Kotaiba    refaktorerat_Therese
+
     [Documentation]    Given that Snåla-Kalle has registerd a new account, is logged in and is on the booking page
                 ...    When Snåla-Kalle selects 1 Adult ticket and proceed to checkout
                 ...    Then Snåla-Kalle see that they don't get a discount
