@@ -39,7 +39,7 @@ Book Safari Tour On The Weekend
 
 
 Book Safari Tour With Date That Has Passed
-   [Tags]     Kotaiba, refaktorerat_ Alma    refaktorerat_ Therese    refaktorerat_ Kotaiba
+   [Tags]    new-feature     Kotaiba, refaktorerat_ Alma    refaktorerat_ Therese    refaktorerat_ Kotaiba
 
    [Documentation]   Given that Kim is trying to book a date for his safari tour, 
    ...               When he is trying to book a date that has already passed, 
