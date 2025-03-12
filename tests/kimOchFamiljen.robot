@@ -15,7 +15,7 @@ Documentation     Test designed for the persona Kim and his family.
 
 Buying Entrance Ticket For Two Adults And Two Children
 
-    [Tags]     new-feature   Alma & Therese    refaktorerat_Alma    refaktorerat_Therese
+    [Tags]        Alma & Therese    refaktorerat_Alma    refaktorerat_Therese
 
     [Documentation]    Given that Kim is on the website for juraStina-Kalle, 
     ...                When he is booking 2 VIP-tickets for 2 adults and 2 VIP-tickets for 2 children, 
@@ -28,6 +28,7 @@ Buying Entrance Ticket For Two Adults And Two Children
     
 
 Book Safari Tour On The Weekend
+
 
     [Tags]      new-feature    Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
 
