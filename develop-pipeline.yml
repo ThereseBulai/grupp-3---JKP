@@ -1,12 +1,6 @@
-trigger: none
-pr:
-  branches:
-    include:
-     - develop
-    exclude:
-      - main
-      - feature/*
-      
+
+trigger: 
+  - develop
 
 
 pool:
