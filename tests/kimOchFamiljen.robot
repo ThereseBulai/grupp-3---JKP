@@ -26,7 +26,7 @@ Buying Entrance Ticket For Two Adults And Two Children
     
 
 Book Safari Tour On The Weekend
-    [Tags]    new-feature    Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
+    [Tags]      Therese & Alma, refaktorerat_ Alma    refaktorerat_Therese    refaktorerat_ Kotaiba    
     [Documentation]    Given that Kim has registered an account and booked VIP-entrance tickets, 
     ...                When he choose safari-dates, 
     ...                Then he should be able to book safari on the weekends specifically tours that get close to the dinasours.
